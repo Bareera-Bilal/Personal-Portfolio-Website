@@ -17,4 +17,4 @@ git push -u origin main
 💡 If your GitHub repo uses master instead of main, use:
 
 bash
-git push -u origin master
+git push -u origin mastergit push -u origin master
