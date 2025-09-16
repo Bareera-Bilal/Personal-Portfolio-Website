@@ -1,0 +1,20 @@
+Final Steps to Push Your Code
+1. Stage All Your Files
+This tells Git which files to include in the commit:
+
+bash
+git add .
+2. Commit Your Changes
+This saves a snapshot of your project:
+
+bash
+git commit -m "Initial commit: Personal Portfolio Website"
+3. Push to GitHub
+Now send your code to the GitHub repository:
+
+bash
+git push -u origin main
+💡 If your GitHub repo uses master instead of main, use:
+
+bash
+git push -u origin master
