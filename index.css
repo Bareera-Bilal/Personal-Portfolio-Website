@@ -25,7 +25,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: radial-gradient(#1d1d1d 3px, transparent 1px);
+  background-image: radial-gradient(#1d1d1d 2px, transparent 5px);
   background-size: 20px 20px;
   opacity: 0.5;
   pointer-events: none;
@@ -46,14 +46,15 @@ body::before {
   background: rgba(10, 10, 10, 0.4);
   backdrop-filter: blur(10px);
   z-index: 10;
-  border-bottom: 1px dotted white; 
+  border-bottom: 1px solid white; 
 }
 
 
 header h1 {
-  font-size: 16px;
+  font-size: 20px;
   color: white;
   letter-spacing: 1px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* nav ul {
@@ -148,6 +149,8 @@ nav a:hover::after {
   font-size: 45px;
   font-weight: 600;
   color: linear-gradient(to right, white 50%, grey 50%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
 }
 
 
@@ -255,10 +258,32 @@ h2 {
   text-shadow: 0 0 15px white;
 }
 /* ==== CONTACT ==== */
-#contact p {
-  font-size: 15px;
+
+.contact p a {
+  font-size: 20;
   color: #bfbfbf;
+  text-decoration: none ;
+  
 }
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 50px;
+}
+
+.social-icon {
+  font-size: 28px;
+  color: #dcdcdc;
+  transition: 0.3s ease;
+}
+
+.social-icon:hover {
+  color: white;
+  text-shadow: 0 0 12px white;
+  transform: scale(1.2);
+}
+
 
 /* ==== FOOTER ==== */
 footer {
@@ -296,7 +321,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  border-left: 2px dotted #2d2d2d;
+  border-left: 2px solid white;
   padding-left: 20px;
 }
 
@@ -483,3 +508,66 @@ footer {
   border-color: white;
   transform: scale(1.02);
 }
+
+
+
+/* ==== EDUCATION ==== */
+.education-card {
+  background: #161616;
+  border: 1px solid #2d2d2d;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+
+.education-card:hover {
+  transform: translateY(-5px);
+  border-color: white;
+}
+
+.education-card h3 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.edu-duration {
+  font-size: 13px;
+  color: #9e9e9e;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.edu-degree {
+  font-size: 15px;
+  color: #dcdcdc;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.edu-status {
+  font-size: 14px;
+  color: #bfbfbf;
+  margin-bottom: 10px;
+}
+
+.edu-desc {
+  font-size: 14px;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.edu-skills {
+  font-size: 13px;
+  color: #9e9e9e;
+  font-style: italic;
+}
+
+.education-card img {
+  top: 10px;            /* Distance from the top */
+  right: 10px;          /* Distance from the right */
+  width: 80px;          /* Optional: control size */
+  height: auto;         /* Keep aspect ratio */
+}
+
