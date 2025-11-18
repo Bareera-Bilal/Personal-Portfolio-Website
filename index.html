@@ -27,7 +27,7 @@
     </nav>
   </header>
 
-  <section class="profile">
+  <section class="profile" data-animate>
     <img src="profile.jpg" alt="Profile" class="profile-img" />
     <p class="intro-text">Hey, I'm Bareera...! <br> [Software Developer]</p>
     <h1 class="profile-title">
@@ -35,11 +35,14 @@
     </h1>
     <a href="#projects" class="latest-btn"> Latest Work ↗</a>
   </section>
+  <script>
+    // Prevent right-click on the whole profile section
+    document.querySelector('.profile').addEventListener('contextmenu', e => e.preventDefault());
+  </script>
 
 
-
-  <section id="about">
-    <h2>About Me</h2>
+  <section id="about" data-animate>
+    <h2 data-animate >About Me </h2>
     <p>
       Hey, This is Bareera Bilal, currently pursuing a Bachelor’s degree in Computer Application along with a Diploma in
       Software
@@ -81,16 +84,16 @@
 </section> -->
 
 
-  <section id="experience">
-    <h2>Experience</h2>
+  <section id="experience" data-animate>
+    <h2 data-animate >Experience</h2>
     <div class="timeline">
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate> 
         <h3>Independent Website Seller</h3>
         <span>2024 - Present</span>
         <p>Created and sold self-made web projects for clients, focusing on full-stack development, responsive design,
           and unique CSS themes.</p>
       </div>
-      <div class="timeline-item">
+      <div class="timeline-item" data-animate>
         <h3>Freelance Translator (English ↔ Urdu)</h3>
         <span>2024 - Present</span>
         <p>Provided professional translation services for documents and digital content, ensuring accuracy and cultural
@@ -99,38 +102,40 @@
     </div>
   </section>
 
-<section id="education">
-  <h2>Education</h2>
+  <section id="education" data-animate>
+    <h2 data-animate>Education</h2>
 
-  <div class="education-card">
-    <img src="ils-logo.png" alt="ils-logo"/>
-    <h3>Interface Learning School</h3>
-    <span class="edu-duration">May 2023 – May 2027</span>
-    <p class="edu-degree">Diploma in Software Engineering, Computer Science</p>
-    <p class="edu-status">Grade: Currently Pursuing</p>
-    <p class="edu-desc">
-      Engaged in coding workshops, peer-led programming sessions, and web development study groups. Gaining practical experience through collaborative tech projects and academic excellence.
-    </p>
-    <p class="edu-skills">Skills: Front-End Development, Generative AI, +10 skills</p>
-  </div>
+    <div class="education-card" data-animate>
+      <img src="ils-logo.png" alt="ils-logo" />
+      <h3>Interface Learning School</h3>
+      <span class="edu-duration">May 2023 – May 2027</span>
+      <p class="edu-degree">Diploma in Software Engineering, Computer Science</p>
+      <p class="edu-status">Grade: Currently Pursuing</p>
+      <p class="edu-desc">
+        Engaged in coding workshops, peer-led programming sessions, and web development study groups. Gaining practical
+        experience through collaborative tech projects and academic excellence.
+      </p>
+      <p class="edu-skills">Skills: Front-End Development, Generative AI, +10 skills</p>
+    </div>
 
-  <div class="education-card">
-    <img src="logo-wc.png" alt="logo-wc"/>
-    <h3>Govt. College for Women M.A. Road, Srinagar</h3>
-    <span class="edu-duration">Aug 2023 – Aug 2026</span>
-    <p class="edu-degree">Bachelor in Computer Application, Computer Science</p>
-    <p class="edu-status">Grade: Currently Pursuing</p>
-    <p class="edu-desc">
-      Pursuing a Bachelor of Computer Applications alongside a Diploma in Software Engineering, with a focus on full-stack development, software design, and strong foundations in technical theory.
-    </p>
-    <p class="edu-skills">Skills: JavaScript, HTML, +8 skills</p>
-  </div>
-</section>
+    <div class="education-card" data-animate>
+      <img src="logo-wc.png" alt="logo-wc" />
+      <h3>Govt. College for Women M.A. Road, Srinagar</h3>
+      <span class="edu-duration">Aug 2023 – Aug 2026</span>
+      <p class="edu-degree">Bachelor in Computer Application, Computer Science</p>
+      <p class="edu-status">Grade: Currently Pursuing</p>
+      <p class="edu-desc">
+        Pursuing a Bachelor of Computer Applications alongside a Diploma in Software Engineering, with a focus on
+        full-stack development, software design, and strong foundations in technical theory.
+      </p>
+      <p class="edu-skills">Skills: JavaScript, HTML, +8 skills</p>
+    </div>
+  </section>
 
 
-  <section id="skills">
+  <section id="skills" data-animate>
     <h2>Skills</h2>
-    <ul class="skills-list">
+    <ul class="skills-list" data-animate>
       <li>C#</li>
       <li>HTML & CSS</li>
       <li>JAVASCRIPT</li>
@@ -151,11 +156,11 @@
     </ul>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="projects" data-animate>
+    <h2>Projects</h2 data-animate>
 
-    <div class="project-card">
-      <h3>Nuvo Atelier </h3>
+    <div class="project-card" data-animate>
+      <h3 data-animate>Nuvo Atelier </h3 >
       <p>Nuvo Atelier is the creative world - where modern design meets refined craftsmanship. This portfolio showcases
         contemporary silhouettes, bespoke creations, and elegant fashion stories shaped with precision, passion, and a
         unique artistic vision - making Nuvo Atelier a space where innovation and timeless beauty come together.</p>
@@ -163,8 +168,8 @@
       <a href="https://github.com/Bareera-Bilal/Personal-Portfolio-Website" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="project-card">
-      <h3>Tansoul</h3>
+    <div class="project-card" data-animate >
+      <h3 data-animate>Tansoul</h3 >
       <p>
         Tansoul is a modern healthcare platform designed to bridge the gap between patients and trusted medical
         professionals. Built with compassion and precision, Tansoul empowers individuals to access expert consultations,
@@ -173,8 +178,8 @@
       <a href="https://github.com/Bareera-Bilal/Tansoul" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="project-card">
-      <h3>Auriqo</h3>
+    <div class="project-card" data-animate>
+      <h3 data-animate>Auriqo</h3>
       <p>
         Auriqo – Where Innovation Meets Shopping...! <br>
         Auriqo is a modern shopping brand web app that blends futuristic design, glowing UI, and real-time
@@ -184,8 +189,8 @@
       <a href="https://github.com/Bareera-Bilal/Auriqo" target="_blank">View on GitHub</a>
     </div>
 
-    <div class="project-card">
-      <h3>Digital Clock</h3>
+    <div class="project-card" data-animate>
+      <h3 data-animate>Digital Clock</h3>
       <p>
         A sleek, real-time digital clock built using HTML, CSS, and JavaScript, designed to blend minimalist aesthetics
         with glowing visual effects.
@@ -235,36 +240,36 @@
     </div>
   </section>
  -->
-  <section id="services">
-    <h2>Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
+  <section id="services" data-animate>
+    <h2 data-animate>Services</h2>
+    <div class="services-grid" data-animate>
+      <div class="service-card" data-animate>
         <h3>Web Development</h3>
         <p>Responsive, scalable, and culturally intelligent web applications—where logic meets elegance.</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-animate>
         <h3>UI/UX Design</h3>
         <p>Interfaces that speak emotion—infused with heritage, accessibility, and intuitive flow.</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-animate>
         <h3>Backend Engineering</h3>
         <p>Robust APIs, JWT-secured authentication, and seamless database integration using .NET and Node.js.</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-animate>
         <h3>Portfolio & Branding</h3>
         <p>Crafting standout portfolios and bilingual brand assets for cultural businesses and professionals.</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-animate>
         <h3>English–Urdu Translation</h3>
         <p>Accurate, culturally nuanced translations bridging English and Urdu for businesses, documents, and digital
           platforms.</p>
       </div>
 
-      <div class="service-card">
+      <div class="service-card" data-animate>
         <h3>Client Communication Integration</h3>
         <p>Direct email functionality via EmailJS and Formspree—bridging users and businesses in real time.</p>
       </div>
@@ -283,9 +288,9 @@
   </section> -->
 
 
-  <section id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonial-card">
+  <section id="testimonials" data-animate>
+    <h2 data-animate>Testimonials</h2>
+    <div class="testimonial-card" data-animate>
       <p>"Bareera’s designs are emotionally intelligent and technically flawless. A true visionary!"</p>
       <h4>- Mentor, Diploma in Software engineering</h4>
     </div>
@@ -302,14 +307,15 @@
 
 
   <section>
-    <div class="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:bareerabilal03@gmail.com">bareerabilal03@gmail.com</a></p>
-    <p>Location: Srinagar, JK</p>
+    <div class="bfoot">
+    <div class="contact" data-animate>
+      <h2 data-animate>Contact</h2>
+      <p>Email: <a href="mailto:bareerabilal03@gmail.com">bareerabilal03@gmail.com</a></p>
+      <p>Location: Srinagar, JK</p>
 
-</div>
+    </div>
 
-    <div class="social-links">
+    <div class="social-links" data-animate>
       <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/bareera-bilal" target="_blank" class="social-icon">
         <i class="fab fa-linkedin"></i>
@@ -325,12 +331,47 @@
         <i class="fab fa-whatsapp"></i>
       </a>
     </div>
+
+    <br>
+
+    <div class="tp" data-animate>
+
+      <a href="terms.html">•Terms and conditions</a>
+      <a href="privacy.html"> • Privacy</a>
+
+    </div>
+    </div>
+
   </section>
 
 
-  <footer>
+
+  <footer data-animate>
     <p>© 2025 Bareera Bilal • All rights reserved </p>
   </footer>
+
+
+
+  <script>
+    // Select all elements with [data-animate]
+    const animatedEls = document.querySelectorAll('[data-animate]');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          // Optional: stop observing once revealed
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15 // reveal when 15% of element is visible
+    });
+
+    // Attach observer
+    animatedEls.forEach(el => observer.observe(el));
+
+  </script>
 </body>
 
 </html>

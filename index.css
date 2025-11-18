@@ -7,6 +7,21 @@
   scroll-behavior: smooth;
 }
 
+.reveal {
+  scroll-behavior: smooth;
+  opacity: 0;
+  transform: translateY(24px);
+  filter: blur(6px);
+  transition: opacity 600ms ease, transform 600ms ease, filter 600ms ease;
+  will-change: opacity, transform, filter;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  filter: blur(0);
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -15,6 +30,7 @@ body {
   color: #dcdcdc;
   line-height: 1.6;
 }
+
 
 /* Background subtle dotted grid */
 
@@ -101,7 +117,7 @@ header h1 {
 
 @keyframes typing {
   from { width: 0; }
-  to { width: 220px; }
+  to { width: 220px; border-color: transparent; }
 }
 
 @keyframes blink {
@@ -183,16 +199,26 @@ nav a:hover::after {
   gap: 15px;
   padding-top: 80px;
   text-align: center;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
-.profile-img {
+/* .profile-img {
   width: 110px;
   height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  /* filter: grayscale(100%); */
-}
+  /* filter: grayscale(100%); 
+} */
+
+.profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      user-select: none;
+      pointer-events: none; /* disables interaction */
+    }
 
 .intro-text {
   font-size: 20px;
@@ -230,7 +256,7 @@ nav a:hover::after {
 
 /* ==== SECTIONS ==== */
 section {
-  padding: 100px 5%;
+  padding: 50px 5%;
   max-width: 1200px;
   margin: auto;
 }
@@ -312,8 +338,37 @@ h2 {
 .project-card a:hover {
   text-shadow: 0 0 15px white;
 }
-/* ==== CONTACT ==== */
 
+/* ==== TP ==== */
+
+.bfoot {
+  margin-top: 10px;
+  margin-bottom: -60px;
+}
+
+.tp {
+  margin-bottom: 30px;
+
+}
+.tp a {
+  font-size: 20;
+  color: #bfbfbf;
+  text-decoration: none ;
+  display:grid;
+  justify-content: center;
+  /* margin-top: 50px; */
+  
+}
+
+
+
+
+
+
+/* ==== CONTACT ==== */
+/* .contact{
+  margin-top: -120px;
+} */
 .contact p a {
   font-size: 20;
   color: #bfbfbf;
@@ -346,7 +401,7 @@ footer {
   padding: 20px;
   color: #888;
   border-top: 1px solid #2a2a2a;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 /* ==== RESPONSIVE ==== */
@@ -451,9 +506,9 @@ footer {
 .service-card {
   background: #161616;
   border: 1px solid #2d2d2d;
-  padding: 10px;
+  padding: 15px;
   border-radius: 10px;
-  margin: 15px 0;
+  margin: 20px 0;
   text-align:center;
   transition: 0.3s ease;
   display: grid;
@@ -470,12 +525,16 @@ footer {
 .service-card h3 {
   font-size: 18px;
   color: white;
-  margin-top: 20px;
+  margin-top: 21px;
+  text-align: left;
 }
 
 .service-card p {
   font-size: 14px;
   color: #bfbfbf;
+  margin-top: 5px;
+  text-align: left;
+
 }
 
 @media (max-width: 768px) {
@@ -508,60 +567,6 @@ footer {
   background: white;
   color: black;
   border-color: white;
-}
-
-/* ==== BLOG ==== */
-#blog article {
-  background: #161616;
-  border: 1px solid #2d2d2d;
-  padding: 20px;
-  border-radius: 10px;
-  margin: 15px 0;
-  transition: 0.3s ease;
-}
-
-#blog article:hover {
-  border-color: white;
-  transform: translateY(-5px);
-}
-
-#blog h3 {
-  font-size: 18px;
-  color: white;
-  margin-bottom: 8px;
-}
-
-#blog p {
-  font-size: 14px;
-  color: #bfbfbf;
-}
-
-#blog a {
-  font-size: 14px;
-  color: white;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-#blog a:hover {
-  text-shadow: 0 0 10px white;
-}
-
-/* ==== FUN SECTION ==== */
-#fun p {
-  font-size: 15px;
-  color: #dcdcdc;
-  text-align: center;
-  background: #161616;
-  border: 1px solid #2d2d2d;
-  padding: 20px;
-  border-radius: 10px;
-  transition: 0.3s ease;
-}
-
-#fun p:hover {
-  border-color: white;
-  transform: scale(1.02);
 }
 
 
@@ -626,3 +631,17 @@ footer {
   height: auto;         /* Keep aspect ratio */
 }
 
+
+
+
+/* Entrance animation */
+[data-animate] {
+    opacity: 0;
+    transform: translateY(16px);
+    transition: opacity .5s ease, transform .5s ease;
+}
+
+[data-animate].in {
+    opacity: 1;
+    transform: translateY(0);
+}
