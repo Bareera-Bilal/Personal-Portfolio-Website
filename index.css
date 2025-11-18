@@ -34,7 +34,7 @@ body::before {
 
 /*  HEADER  */
 
- header {
+ /* header {
   width: 100%;
   height: 100px;
   padding: 20px 70px;
@@ -47,15 +47,70 @@ body::before {
   backdrop-filter: blur(10px);
   z-index: 10;
   border-bottom: 1px solid white; 
+} */
+
+header {
+  width: 100%;
+  height: 100px;
+  padding: 20px 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  background: rgba(10, 10, 10, 0.4);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  border-bottom: 1px solid white;
+  
+  /* Animation */
+  animation: headerSlide 1s ease-out forwards;
+}
+
+@keyframes headerSlide {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 
+/* 
 header h1 {
   font-size: 20px;
   color: white;
   letter-spacing: 1px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+header h1 {
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  overflow: hidden;              /* hides text until revealed */
+  border-right: 2px solid white; /* cursor effect */
+  white-space: nowrap;           /* keeps text on one line */
+  width: 0;                      /* start hidden */
+  animation: typing 2s steps(30, end) forwards,
+             blink 0.7s step-end 6; /* blink stops after last word */
 }
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 220px; }
+}
+
+@keyframes blink {
+  from, to { border-color: transparent; }
+  50% { border-color: transparent; }
+}
+
+
+
 
 /* nav ul {
   list-style: none;
