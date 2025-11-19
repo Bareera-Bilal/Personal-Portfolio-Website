@@ -329,6 +329,7 @@ nav a:hover::after {
 }
 
 
+
 /* HERO SECTION  */
 .profile {
   height: 100vh;
@@ -813,4 +814,99 @@ footer {
 [data-animate].in {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+
+/* ==== CONTACT ==== */
+#ReachMeOut {
+  background: #161616;
+  padding: 60px 20px;
+  border-top: 1px solid #2d2d2d;
+  /* width: 600px; */
+  height: 600px;
+}
+
+#ReachMeOut .container {
+  max-width: 700px;
+  margin: 0 auto;
+  margin-top: -30px;
+}
+
+#ReachMeOut h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+#ReachMeOut .sub {
+  color: #ccc;
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+/* Form */
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#contact-form label {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  background: #1e1e1e;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  padding: 12px;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  border-color: white;
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  outline: none;
+}
+
+#contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+/* Button */
+#contact-form .btn-primary {
+  background: #2d2d2d;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px;
+  border: 1px solid #2d2d2d;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#contact-form .btn-primary:hover {
+  background: white;
+  color: #161616;
+  transform: translateY(-3px);
+  text-shadow: 0 0 15px white;
+}
+
+/* Note */
+#contact-form .form-note {
+  font-size: 13px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 15px;
 }

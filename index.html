@@ -27,28 +27,28 @@
     </nav>
   </header> -->
   <header>
-  <h1>BAREERA BILAL LALA</h1>
+    <h1>BAREERA BILAL LALA</h1>
 
-  <nav>
-    <button class="hamburger">&#9776;</button> <!-- hamburger icon -->
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+    <nav>
+      <button class="hamburger">&#9776;</button> <!-- hamburger icon -->
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<script>
-  const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('nav ul');
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
 
-hamburger.addEventListener('click', () => {
-  navMenu.classList.toggle('show');
-});
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
 
-</script>
+  </script>
 
 
 
@@ -346,11 +346,59 @@ hamburger.addEventListener('click', () => {
 
 
 
+  <section id="ReachMeOut">
+    <div class="container">
+      <h2 data-animate>Contact</h2>
+      <p class="sub" data-animate>
+        Don’t hesitate to connect for project help, or technical inquiries. </p>
+      <form id="contact-form" aria-label="Contact form" data-animate>
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Share your query...!" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Send message</button>
+        <!-- <p class="form-note">Or email: bareerabilal03@gmail.com</p> -->
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault(); // stop the page reload
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      // Replace with your WhatsApp number (country code first, no + or spaces)
+      const phoneNumber = "919149865535";
+
+      // Encode the text so spaces/newlines work
+      const text = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+      );
+
+      // WhatsApp Click-to-Chat link
+      const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+      // Redirect user to WhatsApp
+      window.location.href = url;
+    });
+  </script>
+
+
+
+
   <section id="contact" data-animate>
 
     <div class="bfoot">
       <div class="contact" data-animate>
-        <h2 data-animate>Contact</h2>
+        <!-- <h2 data-animate>Contact</h2> -->
         <p>Email: <a href="mailto:bareerabilal03@gmail.com">bareerabilal03@gmail.com</a></p>
         <p>Location: Srinagar, JK</p>
       </div>
