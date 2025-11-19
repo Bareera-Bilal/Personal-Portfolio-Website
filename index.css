@@ -16,32 +16,6 @@ body {
   line-height: 1.6;
 }
 
-/* Small devices */
-@media (max-width: 600px) {
-  body {
-    line-height: 1.4;
-    font-size: 14px;
-    padding: 0 10px; /* add breathing room */
-  }
-}
-
-/* Tablets */
-@media (min-width: 601px) and (max-width: 1024px) {
-  body {
-    font-size: 16px;
-    line-height: 1.5;
-    padding: 0 20px;
-  }
-}
-
-/* Large screens */
-@media (min-width: 1025px) {
-  body {
-    font-size: 18px;
-    line-height: 1.8;
-    padding: 0 40px;
-  }
-}
 
 
 /* --ANIMATION SCREEN-- */
