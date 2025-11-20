@@ -296,7 +296,7 @@ nav a:hover::after {
   }
 
   header h1 {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
     border-right: none; /* remove typing cursor effect on small screens */
     width: auto;        /* allow full width */
     animation: none;    /* disable typing animation for mobile */
