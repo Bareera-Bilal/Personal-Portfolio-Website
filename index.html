@@ -53,11 +53,20 @@
 
 
   <section class="profile" data-animate>
+    
     <img src="profile.jpg" alt="Profile" class="profile-img" />
-    <p class="intro-text">Hey, I'm Bareera...! <br> [Software Developer]</p>
+
+    <p><span id="typewriter"></span><span class="cursor">|</span></p>
+
+
+<!-- Hey, I'm Bareera...! <br> -->
+    <p class="intro-text"> [Software Developer]</p>
+    
     <h1 class="profile-title">
       "Crafting digital worlds where emotion, identity, and innovation collide.
     </h1>
+
+
 
 
     <div class="cta-group">
@@ -72,7 +81,7 @@
       </a>
 
 
-      <a class="btn" href="#contact"><i class="fa-solid fa-paper-plane"></i> Let’s Connect</a>
+      <a class="btn" href="https://wa.me/919149865535"><i class="fa-solid fa-paper-plane"></i> Let’s Connect</a>
 
     </div>
 
@@ -80,6 +89,39 @@
     <a href="https://nuvo-atelier.vercel.app/" class="latest-btn">Latest Work ↗</a>
 
   </section>
+
+
+  
+   <script>
+
+        const words = ["Hey, I'm Bareera...!"];
+
+        const typewriter = document.getElementById("typewriter");
+        
+        let wordIndex = 0, charIndex = 0, isDeleting = false;
+
+        function type() {
+            const current = words[wordIndex];
+            if (isDeleting) {
+                typewriter.textContent = current.substring(0, charIndex--);
+                if (charIndex < 0) {
+                    isDeleting = false;
+                    wordIndex = (wordIndex + 1) % words.length;
+                }
+            } else {
+                typewriter.textContent = current.substring(0, charIndex++);
+                if (charIndex === current.length) {
+                    isDeleting = true;
+                    setTimeout(type, 1000);
+                    return;
+                }
+            }
+            setTimeout(type, isDeleting ? 50 : 100);
+        }
+
+        type();
+    </script>
+
 
   <script>
     // Prevent right-click on the whole profile section
