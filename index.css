@@ -1,5 +1,68 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
 
+
+
+
+
+ .cta-group {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        /* Base button style  */
+        .cta-group .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            text-decoration: none;
+            color: #f2f4f8;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid #333;
+            transition: all 0.3s ease;
+        }
+
+        /* Primary button */
+        .cta-group .btn.primary {
+            background: linear-gradient(135deg, #4fd1c5, #7aa2ff);
+            color: #000;
+            border: none;
+            box-shadow: 0 4px 12px rgba(122, 162, 255, 0.3);
+        }
+
+        /* Hover effect */
+        .cta-group .btn:hover {
+            transform: translateY(-2px);
+            background: rgba(255, 255, 255, 0.1);
+            border-color: #4fd1c5;
+        }
+
+       .cta-group .btn.primary:hover {
+            background: linear-gradient(135deg, #7aa2ff, #4fd1c5);
+            box-shadow: 0 6px 16px rgba(122, 162, 255, 0.4);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 * {
   margin: 0;
   padding: 0;
