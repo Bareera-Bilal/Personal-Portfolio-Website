@@ -36,3 +36,37 @@ git push -u origin main
 git remote add origin https://github.com/Bareera-Bilal/Calculator.git
 git branch -M main
 git push -u origin main
+
+
+
+
+
+    <!-- <div class="project-card" data-animate>
+      <h3 data-animate>Tansoul</h3>
+      <p>
+        Tansoul is a modern healthcare platform designed to bridge the gap between patients and trusted medical
+        professionals. Built with compassion and precision, Tansoul empowers individuals to access expert consultations,
+        book appointments, and manage their wellness journey with ease.
+      </p>
+      <a href="https://github.com/Bareera-Bilal/Tansoul" target="_blank">View on GitHub</a>
+    </div> -->
+
+    <!-- <div class="project-card" data-animate>
+      <h3 data-animate>Auriqo</h3>
+      <p>
+        Auriqo – Where Innovation Meets Shopping...! <br>
+        Auriqo is a modern shopping brand web app that blends futuristic design, glowing UI, and real-time
+        interactivity. Built using React and JavaScript Web API Integration, it offers a sleek, responsive platform for
+        showcasing apparel, managing collections, and delivering a smooth shopping experience.
+      </p>
+      <a href="https://github.com/Bareera-Bilal/Auriqo" target="_blank">View on GitHub</a>
+    </div> -->
+
+ <!-- <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>Winner - Hackathon 2024 (AI-powered Web App)</li>
+      <li>Certified in ASP.NET Core Development</li>
+      <li>Top 10 Finalist - Kashmir Tech Innovation Challenge</li>
+    </ul>
+  </section> -->

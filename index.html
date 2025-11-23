@@ -14,23 +14,16 @@
 
 <body>
 
-  <!-- <header>
-    <h1>BAREERA BILAL LALA </h1>
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header> -->
+
+
+  <!-- HEADER -->
   <header>
+
     <h1>BAREERA BILAL LALA</h1>
 
     <nav>
-      <button class="hamburger">&#9776;</button> <!-- hamburger icon -->
+      <button class="hamburger">&#9776;</button>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
@@ -38,6 +31,7 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
+
   </header>
 
   <script>
@@ -47,10 +41,14 @@
     hamburger.addEventListener('click', () => {
       navMenu.classList.toggle('show');
     });
-
   </script>
 
+  <!-- END OF HEADER -->
 
+
+
+
+  <!-- PROFILE SECTION-->
 
   <section class="profile" data-animate>
 
@@ -58,8 +56,6 @@
 
     <p><span id="typewriter"></span><span class="cursor">|</span></p>
 
-
-    <!-- Hey, I'm Bareera...! <br> -->
     <p class="intro-text"> [Software Developer]</p>
 
     <h1 class="profile-title">
@@ -67,39 +63,28 @@
     </h1>
 
 
-
-
+    <!-- CTA -->
     <div class="cta-group">
 
       <a href="https://github.com/Bareera-Bilal" class="btn primary">View My Work</a>
-
-      <!-- <a class="btn" href="assets/resume.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download
-                    Resume</a> -->
 
       <a class="btn" href="BareeraBilal-Resume.pdf" download>
         <i class="fa-solid fa-file-arrow-down"></i> Download Resume
       </a>
 
-
       <a class="btn" href="https://wa.me/919149865535"><i class="fa-solid fa-paper-plane"></i> Let’s Connect</a>
 
     </div>
 
-    <!-- <a href='https://nuvo-atelier.vercel.app/' class="latest-btn"> Latest Work ↗</a> -->
     <a href="https://nuvo-atelier.vercel.app/" class="latest-btn">Latest Work ↗</a>
 
   </section>
 
-
-
   <script>
 
     const words = ["Hey, I'm Bareera...!"];
-
     const typewriter = document.getElementById("typewriter");
-
     let wordIndex = 0, charIndex = 0, isDeleting = false;
-
     function type() {
       const current = words[wordIndex];
       if (isDeleting) {
@@ -122,12 +107,16 @@
     type();
   </script>
 
-
   <script>
-    // Prevent right-click on the whole profile section
     document.querySelector('.profile').addEventListener('contextmenu', e => e.preventDefault());
   </script>
 
+  <!-- END OF PROFILE SECTION -->
+
+
+
+
+  <!-- ABOUT SECTION -->
 
   <section id="about" data-animate>
     <h2 data-animate>About Me </h2>
@@ -154,23 +143,12 @@
     </p>
   </section>
 
+  <!-- END OF ABOUT SECTION -->
 
-  <!-- <section id="experience">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <h3>Intern - Software Developer</h3>
-      <span>2024 - Present</span>
-      <p>Worked on full-stack projects, integrating APIs and building responsive UIs.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Freelance Web Designer</h3>
-      <span>2023</span>
-      <p>Designed bilingual banking forms and cultural websites with unique CSS themes.</p>
-    </div>
-  </div>
-</section> -->
 
+
+
+  <!-- EXPERIENCE SECTION -->
 
   <section id="experience" data-animate>
     <h2 data-animate>Experience</h2>
@@ -190,7 +168,12 @@
     </div>
   </section>
 
+  <!-- END OF EXPERIENCE SECTION -->
 
+
+
+
+  <!-- EDUCATION SECTION -->
 
   <section id="education" data-animate>
     <h2 data-animate>Education</h2>
@@ -208,8 +191,6 @@
       <p class="edu-skills">Skills: Front-End Development, Generative AI, +10 skills</p>
     </div>
 
-
-
     <div class="education-card" data-animate>
       <img src="logo-wc.png" alt="logo-wc" />
       <h3>Govt. College for Women M.A. Road, Srinagar</h3>
@@ -224,7 +205,12 @@
     </div>
   </section>
 
+  <!-- END OF EDUCTAION SECTION -->
 
+
+
+
+  <!-- SKILLS SECTION -->
 
   <section id="skills" data-animate>
     <h2>Skills</h2>
@@ -249,194 +235,84 @@
     </ul>
   </section>
 
+  <!-- END OF SKILLS SECTION -->
 
+
+
+
+  <!-- PROJECTS SECTION -->
 
   <section id="projects" data-animate>
     <h2>Projects</h2 data-animate>
 
-    <!-- <div class="project-card" data-animate onclick="window.location.href='https://nuvo-atelier.vercel.app/'">
-      <h3 data-animate>Nuvo Atelier </h3>
-      <p>Nuvo Atelier is the creative world - where modern design meets refined craftsmanship. This portfolio showcases
-        contemporary silhouettes, bespoke creations, and elegant fashion stories shaped with precision, passion, and a
-        unique artistic vision - making Nuvo Atelier a space where innovation and timeless beauty come together.</p>
-
-       <a href="https://github.com/Bareera-Bilal/Nuvo-Atelier" target="_blank">View on GitHub</a> -->
-    <!-- <button><a href="https://github.com/Bareera-Bilal/Focivra" target="_blank">View on GitHub</a></button> 
-  
-
-      <a href="Nuvo Atlier.pdf" target="_blank">Project Synopsis</a>
-
-    </div> -->
-
-
     <div class="project-card" data-animate onclick="window.location.href='https://nuvo-atelier.vercel.app/'">
-
       <h3 data-animate>Nuvo Atelier</h3>
-
       <p>
         Nuvo Atelier is the creative world - where modern design meets refined craftsmanship.
         This portfolio showcases contemporary silhouettes, bespoke creations, and elegant fashion stories
         shaped with precision, passion, and a unique artistic vision - making Nuvo Atelier a space
         where innovation and timeless beauty come together.
       </p>
-
       <!-- GitHub link -->
       <button class="btn1">
         <a href="https://github.com/Bareera-Bilal/Nuvo-Atelier" target="_blank" onclick="event.stopPropagation();">
           View on GitHub
         </a>
       </button>
-
       <!-- Project synopsis -->
       <button class="btn2">
         <a href="Nuvo Atlier.pdf" target="_blank" onclick="event.stopPropagation();">
           Project Synopsis
         </a>
       </button>
-
     </div>
-    </button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- <div class="project-card" data-animate>
-      <h3 data-animate>Tansoul</h3>
-      <p>
-        Tansoul is a modern healthcare platform designed to bridge the gap between patients and trusted medical
-        professionals. Built with compassion and precision, Tansoul empowers individuals to access expert consultations,
-        book appointments, and manage their wellness journey with ease.
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Tansoul" target="_blank">View on GitHub</a>
-    </div> -->
-
-    <!-- <div class="project-card" data-animate>
-      <h3 data-animate>Auriqo</h3>
-      <p>
-        Auriqo – Where Innovation Meets Shopping...! <br>
-        Auriqo is a modern shopping brand web app that blends futuristic design, glowing UI, and real-time
-        interactivity. Built using React and JavaScript Web API Integration, it offers a sleek, responsive platform for
-        showcasing apparel, managing collections, and delivering a smooth shopping experience.
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Auriqo" target="_blank">View on GitHub</a>
-    </div> -->
 
 
     <div class="project-card" data-animate onclick="window.location.href='https://diigital-clock.vercel.app/'">
-
       <h3 data-animate>Digital Clock</h3>
-
       <p>
         A sleek, real-time digital clock built using HTML, CSS, and JavaScript, designed to blend minimalist aesthetics
         with glowing visual effects.
       </p>
-
       <!-- GitHub link -->
       <button class="btn1">
         <a href="https://github.com/Bareera-Bilal/Digital-Clock" target="_blank" onclick="event.stopPropagation();">
           View on GitHub
         </a>
       </button>
-
       <button class="btn2">
         <!-- Project synopsis -->
         <a href="Nuvo Atlier.pdf" target="_blank" onclick="event.stopPropagation();">
           Project Synopsis
         </a>
+      </button>
     </div>
-    </button>
-
-
-
-
-
-
-
-
-    <!-- 
-    <div class="project-card" data-animate onclick="window.location.href='https://diigital-clock.vercel.app/'">
-      <h3 data-animate>Digital Clock</h3>
-      <p>
-        A sleek, real-time digital clock built using HTML, CSS, and JavaScript, designed to blend minimalist aesthetics
-        with glowing visual effects.
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Digital-Clock" target="_blank">View on GitHub</a>
-    </div> -->
 
     <div class="project-card" data-animate onclick="window.location.href='https://diigital-clock.vercel.app/'">
-
       <h3 data-animate> Focivra </h3>
-
       <p>
         Pomodomo Timer
       </p>
-
       <!-- GitHub link -->
       <button class="btn1">
         <a href="https://github.com/Bareera-Bilal/Focivra" target="_blank" onclick="event.stopPropagation();">
           View on GitHub
         </a>
       </button>
-
       <button class="btn2">
         <!-- Project synopsis -->
         <a href="Nuvo Atlier.pdf" target="_blank" onclick="event.stopPropagation();">
           Project Synopsis
         </a>
+      </button>
     </div>
-    </button>
-
-
-
-    <!-- <div class="project-card">
-      <h3>Focivra</h3>
-      <p>
-        Pomodomo Timer
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Focivra" target="_blank">View on GitHub</a>
-    </div> -->
-
-    <!-- <div class="project-card">
-      <h3>Calculator</h3>
-      <p>
-        Developed using C# with a focus on backend logic and user-friendly design, this calculator project showcases my
-        growing expertise in software development. It highlights my ability to build functional desktop applications
-        with clean architecture and intuitive interfaces. The project reflects my commitment to writing efficient,
-        maintainable code while incorporating aesthetic elements that align with my minimalist design philosophy. This
-        calculator serves as a technical milestone in my journey—merging logic, structure, and creativity into a
-        polished tool.
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Calculator" target="_blank">View on GitHub</a>
-    </div> -->
-
 
   </section>
 
-  <!-- <section id="services">
-    <h2>Services</h2>
-    <div class="service-card">
-      <h3>Web Development</h3>
-      <p>Building responsive, scalable, and modern web applications.</p>
-    </div>
-    <div class="service-card">
-      <h3>UI/UX Design</h3>
-      <p>Crafting interfaces that blend culture, emotion, and usability.</p>
-    </div>
-  </section>
- -->
 
 
+
+  <!-- SERVICES SECTION -->
 
   <section id="services" data-animate>
     <h2 data-animate>Services</h2>
@@ -474,49 +350,26 @@
     </div>
   </section>
 
-
-
-  <!-- <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Winner - Hackathon 2024 (AI-powered Web App)</li>
-      <li>Certified in ASP.NET Core Development</li>
-      <li>Top 10 Finalist - Kashmir Tech Innovation Challenge</li>
-    </ul>
-  </section> -->
+  <!-- END OF SERVICES SECTION -->
 
 
 
-  <!-- <section id="testimonials" data-animate>
-    <h2 data-animate>Testimonials</h2>
-    <div class="testimonial-card" data-animate>
-      <p>"Bareera’s designs are emotionally intelligent and technically flawless. A true visionary!"</p>
-      <h4>- Mentor, Diploma in Software engineering</h4>
-    </div>
-    <div class="testimonial-card" data-animate>
-      <p>"Bareera’s designs are A true visionary!"</p>
-      <h4>- Mentor, Diploma in Software engineering</h4>
-    </div>
-  </section>
-   -->
 
-  <!-- <section class="testimonials">
-    <div class="t-header">
-      <h2>What People Say</h2>
-      <p>Selected client feedback — real results, real people.</p>
+  <!-- TESTIMONIALS -->
 
-      <div class="t-controls">
-        <button id="prevBtn">❮</button>
-        <button id="nextBtn">❯</button>
-      </div>
-    </div>
-    
+  <section class="testimonials">
+
+    <h2>What People Say</h2>
+    <p>Selected client feedback — real results, real people.</p>
+
+    <!-- Left Button -->
+    <button id="prevBtn" class="side-btn left-btn">❮</button>
+
     <div class="testimonial-container">
 
       <div class="t-card active">
         <p class="t-quote">“Bareera delivered a crisp, modern portfolio and translated our brand perfectly. Fast and
           professional.”</p>
-
         <div class="t-user">
           <img src="dpro.jpg" alt="">
           <div>
@@ -528,7 +381,6 @@
 
       <div class="t-card">
         <p class="t-quote">“Clean code, great communication, and flawless responsive design. Highly recommended!”</p>
-
         <div class="t-user">
           <img src="dpro.jpg" alt="">
           <div>
@@ -541,7 +393,6 @@
       <div class="t-card">
         <p class="t-quote">“Delivered a beautiful landing page ahead of schedule. Smooth UX and professional approach.”
         </p>
-
         <div class="t-user">
           <img src="dpro.jpg" alt="">
           <div>
@@ -553,230 +404,19 @@
 
     </div>
 
+    <!-- Right Button -->
+    <button id="nextBtn" class="side-btn right-btn">❯</button>
+
+    <!-- Dots -->
     <div class="dots"></div>
-  </section> -->
 
+  </section>
 
-<section class="testimonials">
+  <!-- END OF TESTIMONIALS -->
 
-    
-    <h2>What People Say</h2>
-    <p>Selected client feedback — real results, real people.</p>
-  
-
-  <!-- Left Button -->
-  <button id="prevBtn" class="side-btn left-btn">❮</button>
-
-  <div class="testimonial-container">
-
-    <div class="t-card active">
-      <p class="t-quote">“Bareera delivered a crisp, modern portfolio and translated our brand perfectly. Fast and professional.”</p>
-      <div class="t-user">
-        <img src="dpro.jpg" alt="">
-        <div>
-          <h4>Ali Khan</h4>
-          <span>Product Designer, Neon Labs</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="t-card">
-      <p class="t-quote">“Clean code, great communication, and flawless responsive design. Highly recommended!”</p>
-      <div class="t-user">
-        <img src="dpro.jpg" alt="">
-        <div>
-          <h4>Sara Ahmed</h4>
-          <span>Frontend Lead, Axion</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="t-card">
-      <p class="t-quote">“Delivered a beautiful landing page ahead of schedule. Smooth UX and professional approach.”</p>
-      <div class="t-user">
-        <img src="dpro.jpg" alt="">
-        <div>
-          <h4>Adil Raza</h4>
-          <span>Founder, Heka Studio</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Right Button -->
-  <button id="nextBtn" class="side-btn right-btn">❯</button>
-
-  <!-- Dots -->
-  <div class="dots"></div>
-
-</section>
-
-<style>
-
-.testimonials {
-  position: relative;
-  max-width: 750px;
-  margin: 70px auto;
-  padding: 20px;
-  font-family: "Poppins", sans-serif;
-}
-
-/* =============== SIDE NAVIGATION BUTTONS =============== */
-.side-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #ffffff;
-  border: none;
-  padding: 12px 15px;
-  border-radius: 50%;
-  font-size: 22px;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: 0.3s ease;
-  z-index: 20;
-}
-
-.side-btn:hover {
-  background: #f0f0f0;
-}
-
-.left-btn {
-  left: -55px;
-}
-
-.right-btn {
-  right: -55px;
-}
-
-/* Responsive: Pull buttons inside on small screens */
-@media (max-width: 600px) {
-  .left-btn {
-    left: 5px;
-  }
-  .right-btn {
-    right: 5px;
-  }
-}
-
-/* =============== HEADER =============== */
-/* .t-header {
-  display: flex;
-  justify-content: space-between;
-  /* align-items: center; 
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.t-header h2 {
- font-weight: 600;
-  letter-spacing: 1px;
-  color: #ffffff;
-   font-size: 40px;
-  color: white;
-  /* border-left: 10px solid white; 
-  text-align: left;
-}
-
-.t-header p {
-  color: #555;
-  font-size: 14px;
-} */
-/* 
-.t-controls button {
-  background: #eee;
-  border: none;
-  padding: 8px 12px;
-  font-size: 18px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.t-controls button:hover {
-  background: #ddd;
-} */
-
-/* =============== TESTIMONIAL CARDS =============== */
-.testimonial-container {
-  position: relative;
-  min-height: 220px;
-}
-
-.t-card {
-  background: #fff;
-  border-radius: 16px;
-  padding: 20px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.07);
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  transform: translateY(10px);
-  transition: 0.4s ease;
-}
-
-.t-card.active {
-  opacity: 1;
-  transform: translateY(0);
-  position: relative;
-}
-
-.t-quote {
-  font-size: 17px;
-  line-height: 1.6;
-  color: #333;
-}
-
-/* =============== USER SECTION =============== */
-.t-user {
-  display: flex;
-  align-items: center;
-  margin-top: 15px;
-  gap: 12px;
-}
-
-.t-user img {
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  border: 2px solid #fff;
-}
-
-.t-user h4 {
-  margin: 0;
-  font-size: 16px;
-  color: black;
-}
-
-.t-user span {
-  font-size: 13px;
-  color: black;
-}
-
-/* =============== DOTS =============== */
-.dots {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.dots button {
-  width: 10px;
-  height: 10px;
-  border: none;
-  border-radius: 50%;
-  margin: 5px;
-  background: #d4d4d4;
-  cursor: pointer;
-  transition: 0.2s ease;
-}
-
-.dots button.active {
-  background: #333; /* Indigo accent */
-}
-</style>
+  <style>
+   
+  </style>
 
 
   <script>
@@ -826,16 +466,10 @@
   </script>
 
 
-  <!-- <section id="blog">
-  <h2>Blog</h2>
-  <article>
-    <h3>Blending Urdu & English in Web Design</h3>
-    <p>A deep dive into bilingual UI/UX and cultural storytelling in digital products.</p>
-    <a href="#">Read More ↗</a>
-  </article>
-</section> -->
 
 
+
+  <!-- REACH ME OUT SECTION -->
 
   <section id="ReachMeOut">
     <div class="container">
@@ -853,38 +487,36 @@
         <textarea id="message" name="message" placeholder="Share your query...!" required></textarea>
 
         <button class="btn btn-primary" type="submit">Send message</button>
-        <!-- <p class="form-note">Or email: bareerabilal03@gmail.com</p> -->
       </form>
     </div>
   </section>
 
   <script>
     document.getElementById("contact-form").addEventListener("submit", function (e) {
-      e.preventDefault(); // stop the page reload
+      e.preventDefault();
 
       const name = document.getElementById("name").value;
       const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
 
-      // Replace with your WhatsApp number (country code first, no + or spaces)
       const phoneNumber = "919149865535";
 
-      // Encode the text so spaces/newlines work
       const text = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
       );
 
-      // WhatsApp Click-to-Chat link
       const url = `https://wa.me/${phoneNumber}?text=${text}`;
 
-      // Redirect user to WhatsApp
       window.location.href = url;
     });
   </script>
 
+  <!-- END OF REACH ME OUT SECTION -->
 
 
 
+
+  <!-- CONTACT SECTION -->
   <section id="contact" data-animate>
 
     <div class="bfoot">
@@ -923,7 +555,13 @@
 
   </section>
 
+  <!-- END OF CONTACT SECTION -->
 
+
+
+
+
+  <!-- FOOTER SECTION -->
 
   <footer data-animate>
     <p>© 2025 Bareera Bilal • All rights reserved </p>
@@ -932,14 +570,12 @@
 
 
   <script>
-    // Select all elements with [data-animate]
     const animatedEls = document.querySelectorAll('[data-animate]');
 
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('in');
-          // Optional: stop observing once revealed
           observer.unobserve(entry.target);
         }
       });
@@ -947,10 +583,11 @@
       threshold: 0.15 // reveal when 15% of element is visible
     });
 
-    // Attach observer
     animatedEls.forEach(el => observer.observe(el));
-
   </script>
+
+  <!-- END OF FOOTER SECTION -->
+
 </body>
 
 </html>
