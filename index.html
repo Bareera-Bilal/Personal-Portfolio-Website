@@ -1,524 +1,554 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio Website</title>
-  <link rel="stylesheet" href="index.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nuvo Atelier</title>
+    <meta name="description"
+        content="Nuvo Atelier is the creative world - where modern design meets refined craftsmanship. This portfolio showcases contemporary silhouettes, bespoke creations, and elegant fashion stories shaped with precision, passion, and a unique artistic vision. Every piece reflects a fresh, forward-thinking approach to style—making Nuvo Atelier a space where innovation and timeless beauty come together." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
 
 </head>
 
 <body>
 
-  <!-- <header>
-    <h1>BAREERA BILAL LALA </h1>
 
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <nav class="nav" aria-label="Primary">
+        <div class="container nav-inner">
+            <div class="brand">
+                <span>Nuvo Atelier</span>
+                <span class="badge" aria-label="Location badge">Srinagar • J&K</span>
+            </div>
+
+
+            <!-- Hamburger toggle (only visible on small screens) -->
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+
+            <!-- Menu links -->
+            <div class="menu" role="menubar">
+                <a href="#about" role="menuitem">About</a>
+                <a href="#collections" role="menuitem">Collections</a>
+                <a href="#lookbook" role="menuitem">Lookbook</a>
+                <a href="#services" role="menuitem">Services</a>
+                <a href="#testimonials" role="menuitem">Testimonials</a>
+                <a href="#contact" role="menuitem">Contact</a>
+                <!-- Theme toggle (always visible) -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">Toggle Theme</button>
+            </div>
+        </div>
     </nav>
-  </header> -->
-  <header>
-    <h1>BAREERA BILAL LALA</h1>
 
-    <nav>
-      <button class="hamburger">&#9776;</button> <!-- hamburger icon -->
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <script>
-    const hamburger = document.querySelector('.hamburger');
-    const navMenu = document.querySelector('nav ul');
-
-    hamburger.addEventListener('click', () => {
-      navMenu.classList.toggle('show');
-    });
-
-  </script>
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container hero-content">
+            <div>
+                <div class="kicker" data-animate>Fashion designer</div>
+                <h1 data-animate>Nuvo Atelier: Contemporary Silhouettes, Timeless Beauty</h1>
+                <p class="lead" data-animate>
+                    Nuvo Atelier blends modern design with refined craftsmanship, creating timeless fashion stories with
+                    a fresh vision.
+                </p>
 
 
-
-  <section class="profile" data-animate>
-    
-    <img src="profile.jpg" alt="Profile" class="profile-img" />
-
-    <p><span id="typewriter"></span><span class="cursor">|</span></p>
-
-
-<!-- Hey, I'm Bareera...! <br> -->
-    <p class="intro-text"> [Software Developer]</p>
-    
-    <h1 class="profile-title">
-      "Crafting digital worlds where emotion, identity, and innovation collide.
-    </h1>
+                <div class="cta-row" data-animate>
+                    <a class="btn btn-primary" href="#collections">View collections</a>
+                    <a class="btn btn-secondary" href="#contact-form">Request a custom piece</a>
+                    <!-- <a class="btn btn-secondary" href="Welcome.pdf">Resume</a> -->
+                     <a class="btn btn-secondary" href="Welcome.pdf" download="Resume">Download Resume</a>
 
 
+                </div>
+            </div>
+            <aside class="hero-card" aria-label="Highlights" data-animate>
+                <ul class="hero-list">
+                    <li><span class="dot" aria-hidden="true"></span><span>Contemporary silhouettes shaped with precision
+                            and passion</span></li>
+                    <li><span class="dot" aria-hidden="true"></span><span>Bespoke creations that merge innovation with
+                            timeless beauty</span></li>
+                    <li><span class="dot" aria-hidden="true"></span><span>Elegant fashion stories born from unique
+                            artistic vision</span></li>
+
+                </ul>
+            </aside>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about">
+        <div class="container">
+            <h2 data-animate>About me</h2>
+            <p class="sub" data-animate>
+                From sketch to stitch, I design pieces that carry emotion. My work blends cultural storytelling, fine
+                tailoring, and modern elegance.
+            </p>
+            <div class="about">
+                <div class="card" data-animate>
+                    <h3>Design philosophy</h3>
+                    <p>
+                        Every garment is a narrative: fabric, form, and detail working together. I prioritize fit,
+                        movement, and texture—so the wearer feels both calm and powerful.
+                    </p>
+                </div>
+                <div class="card" data-animate>
+                    <h3>Craft & process</h3>
+                    <p>
+                        Short, collaborative sprints with clients; thoughtful fittings; and ethical sourcing. Expect
+                        clarity, honest timelines, and pieces that last.
+                    </p>
+                </div>
+                <div class="card" data-animate>
+                    <h3>Signature</h3>
+                    <p>
+                        Hand embroidery, structured drapes, minimal palettes with amber and emerald accents.
+                    </p>
+                </div>
+                <div class="card" data-animate>
+                    <h3>Sizes</h3>
+                    <p>
+                        Custom couture and standard ready-to-wear across inclusive size ranges.
+                    </p>
+                </div>
+                <div class="card" data-animate>
+                    <h3>Turnaround</h3>
+                    <p>
+                        • Capsules: 2–4 weeks <br>
+                        • Couture: 6–10 weeks depending on detail and fittings.
+                        • Runway: 15-20 weeks depending on work.
+                    </p>
+                </div>
+                <div class="card" data-animate>
+                    <h3>Location</h3>
+                    <p>
+                        Chattabal, Srinagar • Remote consultations available.
+                    </p>
+                </div>
 
 
-    <div class="cta-group">
 
-      <a href="https://github.com/Bareera-Bilal" class="btn primary">View My Work</a>
-
-      <!-- <a class="btn" href="assets/resume.pdf" download><i class="fa-solid fa-file-arrow-down"></i> Download
-                    Resume</a> -->
-
-      <a class="btn" href="BareeraBilal-Resume.pdf" download>
-        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
-      </a>
+            </div>
 
 
-      <a class="btn" href="https://wa.me/919149865535"><i class="fa-solid fa-paper-plane"></i> Let’s Connect</a>
+        </div>
+    </section>
 
-    </div>
+    <!-- Collections -->
+    <section id="collections">
+        <div class="container">
+            <h2 data-animate>Collections</h2>
+            <p class="sub" data-animate>Selected works—bridal couture, capsule editions, and runway concepts.</p>
+            <div class="grid">
 
-    <!-- <a href='https://nuvo-atelier.vercel.app/' class="latest-btn"> Latest Work ↗</a> -->
-    <a href="https://nuvo-atelier.vercel.app/" class="latest-btn">Latest Work ↗</a>
 
-  </section>
+                <article class="card" data-animate>
+                    <div class="cover" aria-hidden="true">
+                        <img src="1.jpg" alt="Bridal silhouettes" />
+                    </div>
+                    <div class="content">
+                        <span class="chip">Couture</span>
+                        <h3>Bridal couture</h3>
+                        <p>Fine embroidery, layered textures, and tailored drapes—crafted for ceremony and memory.</p>
+                    </div>
+                </article>
 
 
-  
-   <script>
+                <article class="card" data-animate>
+                    <div class="cover" aria-hidden="true">
+                        <img src="2.jpg" alt="Bridal silhouettes" />
+                    </div>
+                    <div class="content">
+                        <span class="chip">Capsule</span>
+                        <h3>Emerald capsule</h3>
+                        <p>Minimal silhouettes with emerald accents; limited run pieces focused on movement and ease.
+                        </p>
+                    </div>
+                </article>
 
-        const words = ["Hey, I'm Bareera...!"];
+                <!-- <article class="card" data-animate>
+                    <div class="cover" aria-hidden="true">Runway concepts</div>
+                    <div class="content">
+                        <span class="chip">Runway</span>
+                        <h3>Amber runway</h3>
+                        <p>Bold forms and structured lines that translate from show to wearable statement.</p>
+                    </div>
+                </article> -->
+                <article class="card" data-animate>
+                    <div class="cover" aria-hidden="true">
+                        <img src="3.jpg" alt="Bridal silhouettes" />
+                    </div>
+                    <div class="content">
+                        <span class="chip">Runway</span>
+                        <h3>Amber runway</h3>
+                        <p>Bold forms and structured lines that translate from show to wearable statement.</p>
+                    </div>
+                </article>
 
-        const typewriter = document.getElementById("typewriter");
-        
-        let wordIndex = 0, charIndex = 0, isDeleting = false;
+            </div>
+        </div>
+    </section>
 
-        function type() {
-            const current = words[wordIndex];
-            if (isDeleting) {
-                typewriter.textContent = current.substring(0, charIndex--);
-                if (charIndex < 0) {
-                    isDeleting = false;
-                    wordIndex = (wordIndex + 1) % words.length;
+    <!-- Lookbook -->
+    <section id="lookbook">
+        <div class="container">
+            <h2 data-animate>Lookbook</h2>
+            <p class="sub" data-animate>A visual journal—textures, details, and silhouettes from recent work.</p>
+            <div class="lookbook" role="list">
+
+                <!-- <figure class="look" role="listitem" data-animate>
+                    <figcaption>Hand-embroidered motif • Amber threadwork</figcaption>
+                </figure> -->
+                <!-- <figure class="look" role="listitem" data-animate>
+                    <figcaption>Structured drape • Emerald accent</figcaption>
+                </figure> -->
+                <!-- 
+                <figure class="look" role="listitem" data-animate>
+                    <figcaption>Tailored bodice • Minimal palette</figcaption>
+                </figure> -->
+                <!-- <figure class="look" role="listitem" data-animate>
+                    <figcaption>Statement sleeve • Runway ready</figcaption>
+                </figure>
+            </div> -->
+
+                <figure class="look" role="listitem" data-animate>
+                    <img src="4.jpeg" alt="Hand-embroidered motif in amber threadwork">
+                    <figcaption>Hand-embroidered motif • Amber threadwork</figcaption>
+                </figure>
+
+
+                <figure class="look" role="listitem" data-animate>
+                    <img src="5.jpeg" alt="Structured drape with emerald accent">
+                    <figcaption>Structured drape • Emerald accent</figcaption>
+                </figure>
+
+
+                <figure class="look" role="listitem" data-animate>
+                    <img src="6.jpeg" alt="Tailored bodice with minimal palette">
+                    <figcaption>Tailored bodice • Minimal palette</figcaption>
+                </figure>
+
+
+                <figure class="look" role="listitem" data-animate>
+                    <img src="7.jpeg" alt="Statement sleeve, runway ready fashion">
+                    <figcaption>Statement sleeve • Runway ready</figcaption>
+                </figure>
+
+            </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 data-animate>Services</h2>
+            <p class="sub" data-animate>From bespoke couture to styled capsules—choose what fits your vision.</p>
+            <div class="grid">
+                <div class="card" data-animate>
+                    <div class="content">
+                        <span class="tag">Custom</span>
+                        <h3>Made-to-measure couture</h3>
+                        <p>Collaborative fittings, fabric selection, and tailored construction for one-of-a-kind pieces.
+                        </p>
+                    </div>
+                </div>
+                <div class="card" data-animate>
+                    <div class="content">
+                        <span class="tag">Capsule</span>
+                        <h3>Limited editions</h3>
+                        <p>Curated mini-collections designed for effortless styling and everyday elegance.</p>
+                    </div>
+                </div>
+                <div class="card" data-animate>
+                    <div class="content">
+                        <span class="tag">Styling</span>
+                        <h3>Editorial & runway styling</h3>
+                        <p>Concept development, look curation, and show-ready presentation for events and shoots.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonials  -->
+    <section id="testimonials">
+        <div class="container">
+            <h2 data-animate>Testimonials</h2>
+            <p class="sub" data-animate>Client notes—calm process, confident results.</p>
+            <div class="testimonials">
+                <div class="card" data-animate>
+                    <div class="content">
+                        <blockquote>“My bridal piece felt like a story stitched into fabric—perfect fit, exquisite
+                            detail.”</blockquote>
+                        <p class="cite">— S. Mir, Bride</p>
+                    </div>
+                </div>
+
+                <div class="card" data-animate>
+                    <div class="content">
+                        <blockquote>“Structured yet fluid. The capsule became my go-to wardrobe—effortless to style.”
+                        </blockquote>
+                        <p class="cite">— A. Khan, Creative Director</p>
+                    </div>
+                </div>
+
+                <div class="card" data-animate>
+                    <div class="content">
+                        <blockquote>“Structured yet fluid. The capsule became my go-to wardrobe—effortless to style.”
+                        </blockquote>
+                        <p class="cite">— MA. Khan, Creative Director</p>
+                    </div>
+                </div>
+
+                <div class="card" data-animate>
+                    <div class="content">
+                        <blockquote>“Structured yet fluid. The capsule became my go-to wardrobe—effortless to style.”
+                        </blockquote>
+                        <p class="cite">— MA. Khan, Creative Director</p>
+                    </div>
+                </div>
+
+                <div class="card" data-animate>
+                    <div class="content">
+                        <blockquote>“Structured yet fluid. The capsule became my go-to wardrobe—effortless to style.”
+                        </blockquote>
+                        <p class="cite">— MA. Khan, Creative Director</p>
+                    </div>
+                </div>
+
+                <div class="card" data-animate>
+                    <div class="content">
+                        <blockquote>“Structured yet fluid. The capsule became my go-to wardrobe—effortless to style.”
+                        </blockquote>
+                        <p class="cite">— MA. Khan, Creative Director</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('in-view');
+                    }, i * 150); // stagger effect
                 }
-            } else {
-                typewriter.textContent = current.substring(0, charIndex++);
-                if (charIndex === current.length) {
-                    isDeleting = true;
-                    setTimeout(type, 1000);
-                    return;
-                }
-            }
-            setTimeout(type, isDeleting ? 50 : 100);
-        }
+            });
+        }, { threshold: 0.1 });
 
-        type();
+        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
     </script>
 
 
-  <script>
-    // Prevent right-click on the whole profile section
-    document.querySelector('.profile').addEventListener('contextmenu', e => e.preventDefault());
-  </script>
-
-
-  <section id="about" data-animate>
-    <h2 data-animate>About Me </h2>
-    <p>
-      Hey, This is Bareera Bilal, currently pursuing a Bachelor’s degree in Computer Application along with a Diploma in
-      Software
-      Engineering from Srinagar, Jammu and Kashmir. With a strong academic foundation and a passion for technology, I
-      thrive on turning ideas into impactful digital solutions.
-      <br>
-      I have hands-on experience in C#, JavaScript, HTML, CSS, SQL, and ASP.NET Core, React, Redux, WebApi which allows
-      me to develop responsive, scalable, and user-friendly web applications. My focus lies in combining clean,
-      efficient logic with
-      modern, sleek design to deliver meaningful user experiences.
-      <br>
-      Beyond technical skills, I am continuously expanding my expertise in full-stack development, problem-solving, and
-      software architecture. I enjoy working on projects that challenge my creativity and push me to explore new
-      technologies.
-
-      When I am not coding, I love exploring new tools, reading about emerging trends in tech, and contributing to
-      innovative projects that enhance both my skills and the community around me.
-
-      My goal is to become a skilled software developer who not only builds applications but also crafts solutions that
-      make a real difference.
-    </p>
-  </section>
-
-
-  <!-- <section id="experience">
-  <h2>Experience</h2>
-  <div class="timeline">
-    <div class="timeline-item">
-      <h3>Intern - Software Developer</h3>
-      <span>2024 - Present</span>
-      <p>Worked on full-stack projects, integrating APIs and building responsive UIs.</p>
-    </div>
-    <div class="timeline-item">
-      <h3>Freelance Web Designer</h3>
-      <span>2023</span>
-      <p>Designed bilingual banking forms and cultural websites with unique CSS themes.</p>
-    </div>
-  </div>
-</section> -->
-
-
-  <section id="experience" data-animate>
-    <h2 data-animate>Experience</h2>
-    <div class="timeline">
-      <div class="timeline-item" data-animate>
-        <h3>Independent Website Seller</h3>
-        <span>2024 - Present</span>
-        <p>Created and sold self-made web projects for clients, focusing on full-stack development, responsive design,
-          and unique CSS themes.</p>
-      </div>
-      <div class="timeline-item" data-animate>
-        <h3>Freelance Translator (English ↔ Urdu)</h3>
-        <span>2024 - Present</span>
-        <p>Provided professional translation services for documents and digital content, ensuring accuracy and cultural
-          relevance in both languages.</p>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="education" data-animate>
-    <h2 data-animate>Education</h2>
-
-    <div class="education-card" data-animate>
-      <img src="ils-logo.png" alt="ils-logo" />
-      <h3>Interface Learning School</h3>
-      <span class="edu-duration">May 2023 – May 2027</span>
-      <p class="edu-degree">Diploma in Software Engineering, Computer Science</p>
-      <p class="edu-status">Grade: Currently Pursuing</p>
-      <p class="edu-desc">
-        Engaged in coding workshops, peer-led programming sessions, and web development study groups. Gaining practical
-        experience through collaborative tech projects and academic excellence.
-      </p>
-      <p class="edu-skills">Skills: Front-End Development, Generative AI, +10 skills</p>
-    </div>
-
-
-
-    <div class="education-card" data-animate>
-      <img src="logo-wc.png" alt="logo-wc" />
-      <h3>Govt. College for Women M.A. Road, Srinagar</h3>
-      <span class="edu-duration">Aug 2023 – Aug 2026</span>
-      <p class="edu-degree">Bachelor in Computer Application, Computer Science</p>
-      <p class="edu-status">Grade: Currently Pursuing</p>
-      <p class="edu-desc">
-        Pursuing a Bachelor of Computer Applications alongside a Diploma in Software Engineering, with a focus on
-        full-stack development, software design, and strong foundations in technical theory.
-      </p>
-      <p class="edu-skills">Skills: JavaScript, HTML, +8 skills</p>
-    </div>
-  </section>
-
 
 
-  <section id="skills" data-animate>
-    <h2>Skills</h2>
-    <ul class="skills-list" data-animate>
-      <li>C#</li>
-      <li>HTML & CSS</li>
-      <li>JAVASCRIPT</li>
-      <li>SQL</li>
-      <li>MONSTERDB</li>
-      <li>ASP.NET Core</li>
-      <li>NODE JS</li>
-      <li>React</li>
-      <li>Redux</li>
-      <li>WebApi</li>
-      <li>TAILWIND CSS</li>
-      <li>BOOTSTRAP</li>
-      <li>POSTMAN</li>
-      <li>FIGMA</li>
-      <li>GIT</li>
-      <li>GITHUB</li>
-      <li>VSCODE</li>
-    </ul>
-  </section>
-
-
-
-  <section id="projects" data-animate>
-    <h2>Projects</h2 data-animate>
-
-    <div class="project-card" data-animate onclick="window.location.href='https://nuvo-atelier.vercel.app/'">
-      <h3 data-animate>Nuvo Atelier </h3>
-      <p>Nuvo Atelier is the creative world - where modern design meets refined craftsmanship. This portfolio showcases
-        contemporary silhouettes, bespoke creations, and elegant fashion stories shaped with precision, passion, and a
-        unique artistic vision - making Nuvo Atelier a space where innovation and timeless beauty come together.</p>
-
-      <a href="https://github.com/Bareera-Bilal/Personal-Portfolio-Website" target="_blank">View on GitHub</a>
-    </div>
-
-    <!-- <div class="project-card" data-animate>
-      <h3 data-animate>Tansoul</h3>
-      <p>
-        Tansoul is a modern healthcare platform designed to bridge the gap between patients and trusted medical
-        professionals. Built with compassion and precision, Tansoul empowers individuals to access expert consultations,
-        book appointments, and manage their wellness journey with ease.
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Tansoul" target="_blank">View on GitHub</a>
-    </div> -->
-
-    <!-- <div class="project-card" data-animate>
-      <h3 data-animate>Auriqo</h3>
-      <p>
-        Auriqo – Where Innovation Meets Shopping...! <br>
-        Auriqo is a modern shopping brand web app that blends futuristic design, glowing UI, and real-time
-        interactivity. Built using React and JavaScript Web API Integration, it offers a sleek, responsive platform for
-        showcasing apparel, managing collections, and delivering a smooth shopping experience.
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Auriqo" target="_blank">View on GitHub</a>
-    </div> -->
-
-    <div class="project-card" data-animate onclick="window.location.href='https://diigital-clock.vercel.app/'">
-      <h3 data-animate>Digital Clock</h3>
-      <p>
-        A sleek, real-time digital clock built using HTML, CSS, and JavaScript, designed to blend minimalist aesthetics
-        with glowing visual effects.
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Digital-Clock" target="_blank">View on GitHub</a>
-    </div>
-
-
-
-
-    <div class="project-card">
-      <h3>Focivra</h3>
-      <p>
-        Pomodomo Timer
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Focivra" target="_blank">View on GitHub</a>
-    </div>
-
-    <!-- <div class="project-card">
-      <h3>Calculator</h3>
-      <p>
-        Developed using C# with a focus on backend logic and user-friendly design, this calculator project showcases my
-        growing expertise in software development. It highlights my ability to build functional desktop applications
-        with clean architecture and intuitive interfaces. The project reflects my commitment to writing efficient,
-        maintainable code while incorporating aesthetic elements that align with my minimalist design philosophy. This
-        calculator serves as a technical milestone in my journey—merging logic, structure, and creativity into a
-        polished tool.
-      </p>
-      <a href="https://github.com/Bareera-Bilal/Calculator" target="_blank">View on GitHub</a>
-    </div> -->
-
-
-  </section>
-
-  <!-- <section id="services">
-    <h2>Services</h2>
-    <div class="service-card">
-      <h3>Web Development</h3>
-      <p>Building responsive, scalable, and modern web applications.</p>
-    </div>
-    <div class="service-card">
-      <h3>UI/UX Design</h3>
-      <p>Crafting interfaces that blend culture, emotion, and usability.</p>
-    </div>
-  </section>
- -->
-
-
-
-  <section id="services" data-animate>
-    <h2 data-animate>Services</h2>
-    <div class="services-grid" data-animate>
-      <div class="service-card" data-animate>
-        <h3>Web Development</h3>
-        <p>Responsive, scalable, and culturally intelligent web applications—where logic meets elegance.</p>
-      </div>
-
-      <div class="service-card" data-animate>
-        <h3>UI/UX Design</h3>
-        <p>Interfaces that speak emotion—infused with heritage, accessibility, and intuitive flow.</p>
-      </div>
-
-      <div class="service-card" data-animate>
-        <h3>Backend Engineering</h3>
-        <p>Robust APIs, JWT-secured authentication, and seamless database integration using .NET and Node.js.</p>
-      </div>
-
-      <div class="service-card" data-animate>
-        <h3>Portfolio & Branding</h3>
-        <p>Crafting standout portfolios and bilingual brand assets for cultural businesses and professionals.</p>
-      </div>
-
-      <div class="service-card" data-animate>
-        <h3>English–Urdu Translation</h3>
-        <p>Accurate, culturally nuanced translations bridging English and Urdu for businesses, documents, and digital
-          platforms.</p>
-      </div>
-
-      <div class="service-card" data-animate>
-        <h3>Client Communication Integration</h3>
-        <p>Direct email functionality via EmailJS and Formspree—bridging users and businesses in real time.</p>
-      </div>
-    </div>
-  </section>
-
-
-
-  <!-- <section id="achievements">
-    <h2>Achievements</h2>
-    <ul>
-      <li>Winner - Hackathon 2024 (AI-powered Web App)</li>
-      <li>Certified in ASP.NET Core Development</li>
-      <li>Top 10 Finalist - Kashmir Tech Innovation Challenge</li>
-    </ul>
-  </section> -->
-
-
-
-  <section id="testimonials" data-animate>
-    <h2 data-animate>Testimonials</h2>
-    <div class="testimonial-card" data-animate>
-      <p>"Bareera’s designs are emotionally intelligent and technically flawless. A true visionary!"</p>
-      <h4>- Mentor, Diploma in Software engineering</h4>
-    </div>
-  </section>
-
-
-
-  <!-- <section id="blog">
-  <h2>Blog</h2>
-  <article>
-    <h3>Blending Urdu & English in Web Design</h3>
-    <p>A deep dive into bilingual UI/UX and cultural storytelling in digital products.</p>
-    <a href="#">Read More ↗</a>
-  </article>
-</section> -->
-
-
-
-  <section id="ReachMeOut">
-    <div class="container">
-      <h2 data-animate>Contact</h2>
-      <p class="sub" data-animate>
-        Don’t hesitate to connect for project help, or technical inquiries. </p>
-      <form id="contact-form" aria-label="Contact form" data-animate>
-        <label for="name">Your name</label>
-        <input id="name" type="text" name="name" placeholder="Your name" required />
-
-        <label for="email">Email</label>
-        <input id="email" type="email" name="email" placeholder="Email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" placeholder="Share your query...!" required></textarea>
-
-        <button class="btn btn-primary" type="submit">Send message</button>
-        <!-- <p class="form-note">Or email: bareerabilal03@gmail.com</p> -->
-      </form>
-    </div>
-  </section>
-
-  <script>
-    document.getElementById("contact-form").addEventListener("submit", function (e) {
-      e.preventDefault(); // stop the page reload
-
-      const name = document.getElementById("name").value;
-      const email = document.getElementById("email").value;
-      const message = document.getElementById("message").value;
-
-      // Replace with your WhatsApp number (country code first, no + or spaces)
-      const phoneNumber = "919149865535";
-
-      // Encode the text so spaces/newlines work
-      const text = encodeURIComponent(
-        `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
-      );
-
-      // WhatsApp Click-to-Chat link
-      const url = `https://wa.me/${phoneNumber}?text=${text}`;
-
-      // Redirect user to WhatsApp
-      window.location.href = url;
-    });
-  </script>
-
-
-
-
-  <section id="contact" data-animate>
-
-    <div class="bfoot">
-      <div class="contact" data-animate>
-        <!-- <h2 data-animate>Contact</h2> -->
-        <p>Email: <a href="mailto:bareerabilal03@gmail.com">bareerabilal03@gmail.com</a></p>
-        <p>Location: Srinagar, JK</p>
-      </div>
-
-      <div class="social-links" data-animate>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/bareera-bilal" target="_blank" class="social-icon">
-          <i class="fab fa-linkedin"></i>
-        </a>
-
-        <!-- GitHub -->
-        <a href="https://github.com/Bareera-Bilal" target="_blank" class="social-icon">
-          <i class="fab fa-github"></i>
-        </a>
-
-        <!-- WhatsApp -->
-        <a href="https://wa.me/919149865535" target="_blank" class="social-icon">
-          <i class="fab fa-whatsapp"></i>
-        </a>
-      </div>
-
-      <br>
-
-      <div class="tp" data-animate>
-
-        <a href="terms.html">•Terms and conditions</a>
-        <a href="privacy.html"> • Privacy</a>
-
-      </div>
-    </div>
-
-  </section>
-
-
-
-  <footer data-animate>
-    <p>© 2025 Bareera Bilal • All rights reserved </p>
-  </footer>
-
-
-
-  <script>
-    // Select all elements with [data-animate]
-    const animatedEls = document.querySelectorAll('[data-animate]');
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('in');
-          // Optional: stop observing once revealed
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.15 // reveal when 15% of element is visible
-    });
-
-    // Attach observer
-    animatedEls.forEach(el => observer.observe(el));
-
-  </script>
+
+
+
+    <!-- Contact -->
+    <!-- <section id="contact">
+        <div class="container">
+            <h2 data-animate>Contact</h2>
+            <p class="sub" data-animate>Share your vision—I'll reply within 24 hours with next steps.</p>
+            <form id="contact-form" aria-label="Contact form" data-animate>
+                <label for="name">Your name</label>
+                <input id="name" type="text" name="name" placeholder="Your name" required />
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Email" required />
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                    placeholder="Tell me about the piece or collection you have in mind" required></textarea>
+                <button class="btn btn-primary" type="submit">Send message</button>
+                <p class="form-note">Or email: nuvo-atelier@gmail.com</p>
+            </form>
+        </div>
+    </section> -->
+    <section id="contact">
+        <div class="container">
+            <h2 data-animate>Contact</h2>
+            <p class="sub" data-animate>
+                Share your vision—I'll reply within 24 hours with next steps.
+            </p>
+            <form id="contact-form" aria-label="Contact form" data-animate>
+
+                <label for="name">Your name</label>
+                <input id="name" type="text" name="name" placeholder="Your name" required />
+
+                <label for="email">Email</label>
+                <input id="email" type="email" name="email" placeholder="Email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message"
+                    placeholder="Tell me about the piece or collection you have in mind" required></textarea>
+
+                <button class="message" type="submit">Send message</button>
+                <p class="form-note">Or email: nuvo-atelier@gmail.com</p>
+
+            </form>
+        </div>
+    </section>
+
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function (e) {
+            e.preventDefault(); // stop the page reload
+
+            const name = document.getElementById("name").value;
+            const email = document.getElementById("email").value;
+            const message = document.getElementById("message").value;
+
+            // Replace with your WhatsApp number (country code first, no + or spaces)
+            const phoneNumber = "919149865535";
+
+            // Encode the text so spaces/newlines work
+            const text = encodeURIComponent(
+                `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+            );
+
+            // WhatsApp Click-to-Chat link
+            const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+            // Redirect user to WhatsApp
+            window.location.href = url;
+        });
+    </script>
+
+
+
+
+    <footer>
+        © 2025 Nuvo Atelier • All rights reserved
+        <div class="social" aria-label="Social links" data-animate>
+            <a href="#" aria-label="Instagram" data-animate>Instagram</a>
+            <a href="#" aria-label="LinkedIn" data-animate>LinkedIn</a>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <!-- sr-only helper -->
+    <script>
+
+        (function () {
+            var style = document.createElement('style');
+            style.innerHTML = '.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0;}';
+            document.head.appendChild(style);
+        })();
+
+    </script>
+
+    <!-- Entrance animations -->
+    <script>
+
+        const els = document.querySelectorAll('[data-animate]');
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+        }, { threshold: 0.1 });
+        els.forEach(el => io.observe(el));
+
+    </script>
+
+    <!-- Theme toggle with persistence -->
+    <script>
+
+        const root = document.documentElement;
+        const toggle = document.getElementById('themeToggle');
+        const stored = localStorage.getItem('theme');
+        if (stored) root.setAttribute('data-theme', stored);
+        toggle?.addEventListener('click', () => {
+            const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            root.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+        });
+
+    </script>
+
+    <!-- Load EmailJS SDK -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script> -->
+
+    <!-- Initialize EmailJS -->
+    <!-- <script>
+
+        (function () {
+            emailjs.init("0CRQUBfvsKa1Ikogi"); // ✅ Your actual public key
+        })();
+
+    </script> -->
+
+    <!-- EmailJS form handler -->
+    <!-- <script>
+
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const form = this;
+            const btn = form.querySelector('button[type="submit"]');
+            const status = document.createElement('p');
+            status.className = 'form-status';
+            form.appendChild(status);
+
+            btn.disabled = true;
+            btn.textContent = 'Sending...';
+
+            emailjs.send('service_3zwh5dh', 'template_967ebdk', {
+                name: form.name.value,
+                email: form.email.value,
+                message: form.message.value
+            })
+                .then(() => {
+                    status.textContent = 'Message sent! I’ll reply within 24 hours.';
+                    form.reset();
+                })
+                .catch((err) => {
+                    console.error(err);
+                    status.textContent = 'Something went wrong. Please try again.';
+                })
+                .finally(() => {
+                    btn.disabled = false;
+                    btn.textContent = 'Send message';
+                });
+        });
+
+    </script> -->
+
+    <!-- <script> 
+    const toggleBtn = document.getElementById('menuToggle');
+const menu = document.querySelector('.menu');
+
+toggleBtn.addEventListener('click', () => {
+  menu.classList.toggle('active');
+});
+
+    </script> -->
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const menu = document.querySelector('.menu');
+
+        menuToggle.addEventListener('click', (e) => {
+            e.stopPropagation(); // prevent click from bubbling to document
+            menu.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!menu.contains(e.target) && e.target !== menuToggle) {
+                menu.classList.remove('active');
+            }
+        });
+
+    </script>
+
 </body>
 
 </html>
