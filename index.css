@@ -858,12 +858,13 @@ nav a:hover::after {
   padding: 60px 20px;
   border-top: 1px solid #2d2d2d;
   height: 600px;
+  border-radius: 20px;
 }
 
 #ReachMeOut .container {
   max-width: 700px;
   margin: 0 auto;
-  margin-top: -30px;
+  margin-top: -20px;
 }
 
 #ReachMeOut h2 {
@@ -895,7 +896,8 @@ nav a:hover::after {
 #contact-form input,
 #contact-form textarea {
   background: #1e1e1e;
-  border: 1px solid #2d2d2d;
+  /* border: 1px solid #2d2d2d; */
+  border: 0.5px solid white;
   border-radius: 8px;
   padding: 12px;
   color: white;
