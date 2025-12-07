@@ -584,17 +584,30 @@ nav ul li a:hover {
 
 /* Profile image */
 
-.about-left img {
-  width: 130px;
-  height: 130px;
-  border-radius: 50%;
+/* .about-left img {
+  width: 500px;
+  height: 500px;
+  border-radius: 22px;
   object-fit: cover;
   display: block;
   margin-bottom: 22px;
   box-shadow:
     0 18px 40px rgba(0,0,0,0.25),
     0 0 0 6px rgba(255,255,255,0.7);
+} */
+ .about-left img {
+  width: 100%;        /* scale with container */
+  max-width: 500px;   /* optional max size */
+  height: auto;       /* maintain aspect ratio */
+  border-radius: 22px;
+  object-fit: contain; /* show full image */
+  display: block;
+  margin-bottom: 22px;
+  box-shadow:
+    0 18px 40px rgba(0,0,0,0.25),
+    0 0 0 6px rgba(255,255,255,0.7);
 }
+
 
 /* Details block */
 
