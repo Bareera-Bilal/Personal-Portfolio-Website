@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 
 * {
@@ -320,7 +321,6 @@ nav ul li a:hover {
 
 
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 /* =========================
    PROFILE SECTION (ELITE)
@@ -528,7 +528,13 @@ nav ul li a:hover {
   .profile-img {
     width: 114px;
     height: 114px;
+    margin-top: 50px;
   }
+  .latest-btn {
+  margin-top: 20px;
+}
+
+  
 }
 
 @media (max-width: 420px) {
@@ -540,6 +546,10 @@ nav ul li a:hover {
     width: 100%;
     justify-content: center;
   }
+
+  .latest-btn {
+  margin-top: 20px;
+}
 }
 
 
