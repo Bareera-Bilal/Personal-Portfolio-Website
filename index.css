@@ -85,6 +85,9 @@ body {
 /* END OF ENTRANCE ANIMATION */
 
 
+section {
+  scroll-margin-top: 50px; /* adds gap when scrolled into view */
+}
 
 
 
@@ -109,14 +112,6 @@ body::before {
 
 
 
-
-
-/*  SECTIONS  */
-/* section {
-  /* padding: 70px 5%; */
-  /* max-width: 1200px; */
-  /* margin: auto; 
-} */
 
 h2 {
   font-size: 40px;
@@ -173,6 +168,7 @@ header h1 {
   -webkit-text-fill-color: transparent;
   position: relative;
   cursor: default;
+  margin-left: 50px;
 }
 
 header h1::after {
@@ -194,6 +190,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 28px;
+  margin-right: 30px;
 }
 
 nav ul {
@@ -606,17 +603,7 @@ nav ul li a:hover {
 
 /* Profile image */
 
-/* .about-left img {
-  width: 500px;
-  height: 500px;
-  border-radius: 22px;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 22px;
-  box-shadow:
-    0 18px 40px rgba(0,0,0,0.25),
-    0 0 0 6px rgba(255,255,255,0.7);
-} */
+
  .about-left img {
   width: 100%;        /* scale with container */
   max-width: 500px;   /* optional max size */
@@ -1578,9 +1565,10 @@ nav ul li a:hover {
   font-size: 44px;
   font-weight: 900;
   color: #0f172a;
-  margin-bottom: 14px;
+  margin-bottom: 50px; /* Increased from 14px to create space */
   position: relative;
 }
+
 
 .testimonials h2::after {
   content: "";
@@ -1828,7 +1816,7 @@ nav ul li a:hover {
   font-weight: 900;
   color: #0f172a;
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 50px;
   position: relative;
 }
 
