@@ -333,11 +333,18 @@ nav ul li a:hover {
     radial-gradient(1200px 600px at 10% 10%, #dbe9ff 0%, transparent 40%),
     radial-gradient(1000px 500px at 90% 90%, #ffe3f1 0%, transparent 40%),
     linear-gradient(180deg, #f7f9fc, #eef2f7); */
-     background:
+     /* background:
     radial-gradient(900px 500px at 15% 20%, rgba(99,102,241,0.18), transparent 45%),
     radial-gradient(800px 480px at 85% 75%, rgba(236,72,153,0.18), transparent 45%),
     radial-gradient(600px 400px at 50% 100%, rgba(14,165,233,0.12), transparent 55%),
-    linear-gradient(180deg, #f8fafc 0%, #eef2f7 45%, #e2e8f0 100%);
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 45%, #e2e8f0 100%); */
+
+    background:
+    radial-gradient(600px 400px at 20% 25%, rgba(99,102,241,0.30), transparent 50%),
+    radial-gradient(500px 350px at 80% 70%, rgba(236,72,153,0.20), transparent 50%),
+    radial-gradient(400px 300px at 50% 100%, rgba(14,165,233,0.10), transparent 60%),
+    linear-gradient(180deg, #f9fafb 0%, #f1f5f9 50%, #e2e8f0 100%);
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -498,7 +505,7 @@ nav ul li a:hover {
   margin-top: 40px;
   font-size: 15px;
   font-weight: 700;
-  color: #2563eb;
+  color: black;
   text-decoration: none;
   position: relative;
   z-index: 1;
@@ -568,10 +575,10 @@ nav ul li a:hover {
   width: 100%;
   /* padding: 120px 24px; */
   padding:60px 24px 40px;
-  background:
+  /* background:
     radial-gradient(900px 400px at 10% 90%, #dbe9ff 0%, transparent 45%),
     radial-gradient(800px 400px at 90% 10%, #ffe4f0 0%, transparent 45%),
-    linear-gradient(180deg, #ffffff, #f4f7fb);
+    linear-gradient(180deg, #ffffff, #f4f7fb); */
   font-family: "Inter", sans-serif;
 }
 
@@ -769,10 +776,10 @@ nav ul li a:hover {
   width: 100%;
   /* padding: 140px 24px; */
   padding:60px 24px 40px;
-  background:
+  /* background:
     radial-gradient(900px 400px at 90% 10%, #dbe9ff 0%, transparent 45%),
     radial-gradient(900px 400px at 10% 90%, #ffe4f0 0%, transparent 45%),
-    linear-gradient(180deg, #f4f7fb, #ffffff);
+    linear-gradient(180deg, #f4f7fb, #ffffff); */
   font-family: "Inter", sans-serif;
 }
 
@@ -934,10 +941,10 @@ nav ul li a:hover {
   width: 100%;
   /* padding: 140px 24px; */
   padding:60px 24px 40px;
-  background:
+  /* background:
     radial-gradient(900px 400px at 10% 20%, #dbe9ff 0%, transparent 45%),
     radial-gradient(900px 400px at 90% 90%, #ffe4f0 0%, transparent 45%),
-    linear-gradient(180deg, #ffffff, #f4f7fb);
+    linear-gradient(180deg, #ffffff, #f4f7fb); */
   font-family: "Inter", sans-serif;
 }
 
@@ -1118,10 +1125,10 @@ nav ul li a:hover {
   width: 100%;
   /* padding: 140px 24px; */
   padding:60px 24px 40px;
-  background:
+  /* background:
     radial-gradient(900px 400px at 10% 90%, #dbe9ff 0%, transparent 45%),
     radial-gradient(900px 400px at 90% 10%, #ffe4f0 0%, transparent 45%),
-    linear-gradient(180deg, #f4f7fb, #ffffff);
+    linear-gradient(180deg, #f4f7fb, #ffffff); */
   font-family: "Inter", sans-serif;
   text-align: center;
 }
@@ -1228,10 +1235,10 @@ nav ul li a:hover {
   width: 100%;
   /* padding: 140px 24px; */
   padding:60px 24px 40px;
-  background:
+  /* background:
     radial-gradient(900px 400px at 10% 10%, #dbe9ff 0%, transparent 45%),
     radial-gradient(900px 400px at 90% 90%, #ffe4f0 0%, transparent 45%),
-    linear-gradient(180deg, #ffffff, #f4f7fb);
+    linear-gradient(180deg, #ffffff, #f4f7fb); */
   font-family: "Inter", sans-serif;
   text-align: center;
 }
@@ -1415,10 +1422,10 @@ nav ul li a:hover {
   width: 100%;
   /* padding: 140px 24px; */
   padding:60px 24px 40px;
-  background:
+  /* background:
     radial-gradient(800px 400px at 0% 0%, #e0ecff 0%, transparent 45%),
     radial-gradient(800px 400px at 100% 100%, #ffe6f2 0%, transparent 45%),
-    linear-gradient(180deg, #ffffff, #f5f8fc);
+    linear-gradient(180deg, #ffffff, #f5f8fc); */
   text-align: center;
   font-family: "Inter", sans-serif;
 }
@@ -1554,10 +1561,10 @@ nav ul li a:hover {
   width: 100%;
   /* padding: 140px 24px; */
   padding:60px 24px 40px;
-  background:
+  /* background:
     radial-gradient(900px 500px at 0% 0%, #e6f0ff 0%, transparent 45%),
     radial-gradient(900px 500px at 100% 100%, #ffe6f2 0%, transparent 45%),
-    linear-gradient(180deg, #ffffff, #f6f9ff);
+    linear-gradient(180deg, #ffffff, #f6f9ff); */
   text-align: center;
   position: relative;
   overflow: hidden;
@@ -1589,7 +1596,8 @@ nav ul li a:hover {
 
 .testimonials p {
   color: #475569;
-  margin-bottom: 70px;
+  /* margin-bottom: 50px; */
+  margin-top: 20px;
   font-size: 17px;
   font-weight: 500;
 }
@@ -1625,6 +1633,8 @@ nav ul li a:hover {
   opacity: 0;
   transform: translateY(20px) scale(0.98);
   transition: 0.6s ease;
+    border: 1px solid rgba(255,255,255,0.7);
+
 }
 
 .t-card.active {
@@ -1794,10 +1804,10 @@ nav ul li a:hover {
 #ReachMeOut {
   /* padding: 140px 24px; */
   padding:60px 24px 40px;
-  background:
+  /* background:
     radial-gradient(900px 500px at 100% 0%, #ffe4f2 0%, transparent 45%),
     radial-gradient(900px 500px at 0% 100%, #e0ecff 0%, transparent 45%),
-    linear-gradient(180deg, #ffffff, #f6f9ff);
+    linear-gradient(180deg, #ffffff, #f6f9ff); */
 }
 
 #ReachMeOut .container {
