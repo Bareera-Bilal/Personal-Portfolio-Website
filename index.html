@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio Website</title>
+  <link rel="stylesheet" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+
+
+  <!-- FAVICON -->
+
+  <link rel="icon" type="image/png" href="Met-Fav.jpg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="Met-Fav.jpg" />
+  <link rel="shortcut icon" href="favicon.ico" />
+
+  <!-- END OF FAVICON -->
+
+
+
+
+  <!-- META -->
+
+  <!-- Basic SEO -->
+
+  <meta name="description"
+    content="Portfolio of Bareera Bilal Lala — Software Developer crafting digital worlds where emotion, identity, and innovation collide." />
+  <meta name="keywords"
+    content="Bareera Bilal Lala, Software Developer, Web Developer, Portfolio, Full Stack, UI/UX, Projects" />
+  <meta name="author" content="Bareera Bilal Lala" />
+
+
+
+  <!-- Open Graph (for LinkedIn, Facebook) -->
+
+  <meta property="og:title" content="Bareera Bilal Lala | Software Developer | Portfolio" />
+  <meta property="og:description"
+    content="Explore my projects, skills, and latest work in web development and design." />
+  <meta property="og:image" content="https://bareerabilal.vercel.app/Met-Fav.jpg" />
+  <meta property="og:url" content="https://bareerabilal.vercel.app" />
+  <meta property="og:type" content="website" />
+
+
+
+
+
+  <!-- Twitter Card -->
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Bareera Bilal Lala | Software Developer | Portfolio" />
+  <meta name="twitter:description" content="Crafting digital worlds where emotion, identity, and innovation collide." />
+  <meta name="twitter:image" content="bareerabilal.vercel.app/Met-Fav.jpg">
+
+
+  <!-- END OF META -->
+
+
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+  <!-- HEADER -->
+  <header>
+
+    <h1>BAREERA BILAL LALA</h1>
+
+    <nav>
+      <button class="hamburger">&#9776;</button>
+      <ul>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#ReachMeOut">Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+ 
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const navMenu = document.querySelector('nav ul');
+
+    // Toggle menu when hamburger is clicked
+    hamburger.addEventListener('click', (e) => {
+      navMenu.classList.toggle('show');
+      e.stopPropagation(); // Prevent click from bubbling to document
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      // Check if the click is NOT inside hamburger or navMenu
+      if (!navMenu.contains(e.target) && !hamburger.contains(e.target)) {
+        navMenu.classList.remove('show');
+      }
+    });
+  </script>
+
+
+  <!-- END OF HEADER -->
+
+
+
+
+  <!-- PROFILE SECTION-->
+
+  <section class="profile" data-animate>
+
+    <img src="Met-Fav.jpg" alt="Profile" class="profile-img" />
+
+    <p><span id="typewriter"></span><span class="cursor">|</span></p>
+
+    <p class="intro-text"> [Software Developer]</p>
+
+    <h1 class="profile-title">
+      "Crafting digital worlds where emotion, identity, and innovation collide.
+    </h1>
+
+
+    <!-- CTA -->
+    <div class="cta-group">
+
+      <!-- <a href="https://github.com/Bareera-Bilal" class="btn primary">View My Work</a> -->
+       <a href="https://github.com/Bareera-Bilal" class="btn primary" target="_blank" rel="noopener noreferrer">View My Work</a>
+
+
+      <a class="btn" href="BareeraBilal-Resume.pdf" download>
+        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+      </a>
+
+      <!-- <a class="btn" href="https://wa.me/919149865535"><i class="fa-solid fa-paper-plane"></i> Let’s Connect</a> -->
+       <a class="btn" href="https://wa.me/919149865535" target="_blank" rel="noopener noreferrer">
+  <i class="fa-solid fa-paper-plane"></i> Let’s Connect
+</a>
+
+
+    </div>
+
+    <!-- <a href="https://nuvo-atelier.vercel.app/" class="latest-btn">Latest Work ↗</a> -->
+     <a href="https://nuvo-atelier.vercel.app/" class="latest-btn" target="_blank" rel="noopener noreferrer">
+  Latest Work ↗
+</a>
+
+
+  </section>
+
+  <script>
+
+    const words = ["Hey, I'm Bareera...!"];
+    const typewriter = document.getElementById("typewriter");
+    let wordIndex = 0, charIndex = 0, isDeleting = false;
+    function type() {
+      const current = words[wordIndex];
+      if (isDeleting) {
+        typewriter.textContent = current.substring(0, charIndex--);
+        if (charIndex < 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+      } else {
+        typewriter.textContent = current.substring(0, charIndex++);
+        if (charIndex === current.length) {
+          isDeleting = true;
+          setTimeout(type, 1000);
+          return;
+        }
+      }
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+
+    type();
+  </script>
+
+  <script>
+    document.querySelector('.profile').addEventListener('contextmenu', e => e.preventDefault());
+  </script>
+
+  <!-- END OF PROFILE SECTION -->
+
+
+
+
+  <!-- ABOUT SECTION -->
+
+  <section id="about-section">
+
+    <div class="about-container">
+
+      <!-- LEFT SIDE -->
+      <div class="about-left">
+        <img src="Met-Fav.jpg" alt="Profile">
+
+        <div class="about-details">
+          <p><strong>Name:</strong> Bareera Bilal Lala</p>
+          <p><strong>Profile:</strong> Software Developer</p>
+          <p><strong>Email:</strong> bareerabilal03@gmail.com</p>
+          <p><strong>Phone:</strong> +91 9149865535</p>
+        </div>
+
+        <h3>Top Skills</h3>
+
+        <div class="skill">
+          <span>FULL STACK DEVELOPMENT<small>85%</small></span>
+          <div class="bar">
+            <div style="width:85%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>ASP .NET CORE<small>80%</small></span>
+          <div class="bar">
+            <div style="width:80%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>MERN STACK<small>75%</small></span>
+          <div class="bar">
+            <div style="width:75%"></div>
+          </div>
+        </div>
+
+        <div class="skill">
+          <span>C# - JAVASCRIPT - TYPESCRIPT<small>70%</small></span>
+          <div class="bar">
+            <div style="width:70%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE -->
+      <div class="about-right">
+        <h2>About Me</h2>
+
+        <p>
+          Hey, This is Bareera Bilal, currently pursuing a Bachelor’s degree in Computer Application along with a
+          Diploma in
+          Software
+          Engineering from Srinagar, Jammu and Kashmir. With a strong academic foundation and a passion for technology,
+          I
+          thrive on turning ideas into impactful digital solutions.
+          <br> <br>
+          I have hands-on experience in C#, JavaScript, HTML, CSS, SQL, and ASP.NET Core, React, Redux, WebApi which
+          allows
+          me to develop responsive, scalable, and user-friendly web applications. My focus lies in combining clean,
+          efficient logic with
+          modern, sleek design to deliver meaningful user experiences.
+          <br> <br>
+          Beyond technical skills, I am continuously expanding my expertise in full-stack development, problem-solving,
+          and
+          software architecture. I enjoy working on projects that challenge my creativity and push me to explore new
+          technologies.
+
+          When I am not coding, I love exploring new tools, reading about emerging trends in tech, and contributing to
+          innovative projects that enhance both my skills and the community around me.
+
+          My goal is to become a skilled software developer who not only builds applications but also crafts solutions
+          that
+          make a real difference.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- END OF ABOUT SECTION -->
+
+
+
+
+
+  <!-- EXPERIENCE SECTION -->
+
+  <section id="experience" data-animate>
+    <h2 data-animate>Experience</h2>
+    <div class="timeline">
+      <div class="timeline-item" data-animate>
+        <h3>Independent Website Seller</h3>
+        <span>2024 - Present</span>
+        <p>Created and sold self-made web projects for clients, focusing on full-stack development, responsive design,
+          and unique CSS themes.</p>
+      </div>
+      <div class="timeline-item" data-animate>
+         <h3>English ↔ Urdu Translator | Punjab National Bank, Srinagar</h3>
+        <span>2024 – Present</span>
+        <p>Delivering professional translation services for documents and digital content, ensuring linguistic accuracy
+          and cultural relevance in both English and Urdu.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- END OF EXPERIENCE SECTION -->
+
+
+
+
+
+  <!-- EDUCATION SECTION -->
+
+  <section id="education" data-animate>
+    <h2 data-animate>Education</h2>
+
+    <div class="education-card" data-animate>
+      <img src="ils-logo.png" alt="ils-logo" />
+      <h3>Interface Learning School</h3>
+      <span class="edu-duration">May 2023 – May 2027</span>
+      <p class="edu-degree">Diploma in Software Engineering, Computer Science</p>
+      <p class="edu-status">Grade: Currently Pursuing</p>
+      <p class="edu-desc">
+        Engaged in coding workshops, peer-led programming sessions, and web development study groups. Gaining practical
+        experience through collaborative tech projects and academic excellence.
+      </p>
+      <p class="edu-skills">Skills: Front-End Development, Generative AI, +10 skills</p>
+    </div>
+
+    <div class="education-card" data-animate>
+      <img src="logo-wc.png" alt="logo-wc" />
+      <h3>Govt. College for Women M.A. Road, Srinagar</h3>
+      <span class="edu-duration">Aug 2023 – Aug 2026</span>
+      <p class="edu-degree">Bachelor in Computer Application, Computer Science</p>
+      <p class="edu-status">Grade: Currently Pursuing</p>
+      <p class="edu-desc">
+        Pursuing a Bachelor of Computer Applications alongside a Diploma in Software Engineering, with a focus on
+        full-stack development, software design, and strong foundations in technical theory.
+      </p>
+      <p class="edu-skills">Skills: JavaScript, HTML, +8 skills</p>
+    </div>
+  </section>
+
+  <!-- END OF EDUCTAION SECTION -->
+
+
+
+
+
+  <!-- SKILLS SECTION -->
+
+  <section id="skills" data-animate>
+    <h2>Skills</h2>
+    <ul class="skills-list" data-animate>
+      <li>ASP.NET CORE</li>
+      <li>C#</li>
+      <li>JAVASCRIPT</li>
+      <li>TYPESCRIPT</li>
+      <li>HTML & CSS</li>
+      <li>SQL</li>
+      <li>MONSTERDB</li>
+      <li>POSTGRESQL</li>
+      <li>WEBAPI</li>
+      <li>REACT</li>
+      <li>REDUX</li>
+      <li>NODE JS</li>
+      <li>TAILWIND CSS</li>
+      <li>BOOTSTRAP</li>
+      <li>POSTMAN</li>
+      <li>FIGMA</li>
+      <li>GIT</li>
+      <li>GITHUB</li>
+      <li>VSCODE</li>
+      <li>VISUAL STUDIO</li>
+      <li>FLIPPA</li>
+      <li>RENDER</li>
+      <li>VERCEL</li>
+      <li>EMAIL JS</li>
+    </ul>
+  </section>
+
+  <!-- END OF SKILLS SECTION -->
+
+
+
+
+
+  <!-- PROJECTS SECTION -->
+
+  <section id="projects" data-animate>
+    <h2>Projects</h2 data-animate>
+
+    <div class="project-card" data-animate onclick="window.location.href='https://nuvo-atelier.vercel.app/'">
+      <img src="Nuvo-atelier-SS.png" alt="">
+      <h3 data-animate>Nuvo Atelier</h3>
+      <p>
+        Nuvo Atelier is the creative world - where modern design meets refined craftsmanship.
+        This portfolio showcases contemporary silhouettes, bespoke creations, and elegant fashion stories
+        shaped with precision, passion, and a unique artistic vision - making Nuvo Atelier a space
+        where innovation and timeless beauty come together.
+      </p>
+      <!-- GitHub link -->
+      <button class="btn1">
+        <a href="https://github.com/Bareera-Bilal/Nuvo-Atelier" target="_blank" onclick="event.stopPropagation();">
+          View on GitHub
+        </a>
+      </button>
+      <!-- Project synopsis -->
+      <button class="btn2">
+        <a href="Nuvo-Atlier-Synopsis.pdf" target="_blank" onclick="event.stopPropagation();">
+          Project Synopsis
+        </a>
+      </button>
+    </div>
+
+
+    <!-- <div class="project-card" data-animate onclick="window.location.href='https://diigital-clock.vercel.app/'">
+      <h3 data-animate>Digital Clock</h3>
+      <p>
+        A sleek, real-time digital clock built using HTML, CSS, and JavaScript, designed to blend minimalist aesthetics
+        with glowing visual effects.
+      </p>
+      <button class="btn1">
+        <a href="https://github.com/Bareera-Bilal/Digital-Clock" target="_blank" onclick="event.stopPropagation();">
+          View on GitHub
+        </a>
+      </button>
+      <button class="btn2">
+    
+        <a href="Nuvo Atlier.pdf" target="_blank" onclick="event.stopPropagation();">
+          Project Synopsis
+        </a>
+      </button>
+    </div> -->
+
+    <!-- 
+    <div class="project-card" data-animate onclick="window.location.href='https://diigital-clock.vercel.app/'">
+      <h3 data-animate> Focivra </h3>
+      <p>
+        Pomodomo Timer
+      </p>
+      
+      <button class="btn1">
+        <a href="https://github.com/Bareera-Bilal/Focivra" target="_blank" onclick="event.stopPropagation();">
+          View on GitHub
+        </a>
+      </button>
+      <button class="btn2">
+     
+        <a href="Nuvo Atlier.pdf" target="_blank" onclick="event.stopPropagation();">
+          Project Synopsis
+        </a>
+      </button>
+    </div> -->
+
+  </section>
+
+  <!-- END OF PROJECTS SECTION -->
+
+
+
+
+
+  <!-- SERVICES SECTION -->
+
+  <section id="services" data-animate>
+    <h2 data-animate>Services</h2>
+    <div class="services-grid" data-animate>
+      <div class="service-card" data-animate>
+        <h3>Web Development</h3>
+        <p>Responsive, scalable, and culturally intelligent web applications—where logic meets elegance.</p>
+      </div>
+
+      <div class="service-card" data-animate>
+        <h3>UI/UX Design</h3>
+        <p>Interfaces that speak emotion—infused with heritage, accessibility, and intuitive flow.</p>
+      </div>
+
+      <div class="service-card" data-animate>
+        <h3>Backend Engineering</h3>
+        <p>Robust APIs, JWT-secured authentication, and seamless database integration using .NET and Node.js.</p>
+      </div>
+
+      <div class="service-card" data-animate>
+        <h3>Portfolio & Branding</h3>
+        <p>Crafting standout portfolios and bilingual brand assets for cultural businesses and professionals.</p>
+      </div>
+
+      <div class="service-card" data-animate>
+        <h3>English–Urdu Translation</h3>
+        <p>Accurate, culturally nuanced translations bridging English and Urdu for businesses, documents, and digital
+          platforms.</p>
+      </div>
+
+      <div class="service-card" data-animate>
+        <h3>Client Communication Integration</h3>
+        <p>Direct email functionality via EmailJS and Formspree—bridging users and businesses in real time.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- END OF SERVICES SECTION -->
+
+
+
+
+
+  <!-- TESTIMONIALS -->
+
+  <section class="testimonials" data-animate>
+
+    <h2>What People Say</h2>
+    <p>Selected client feedback — real results, real people.</p>
+
+    <!-- Left Button -->
+    <button id="prevBtn" class="side-btn left-btn">❮</button>
+
+    <div class="testimonial-container">
+
+      <div class="t-card active">
+        <p class="t-quote">“Bareera's growth as a developer reflects dedication, curiosity, and hard work”</p>
+        <div class="t-user">
+          <img src="Liyakat-Khan.png" alt="">
+          <div>
+            <h4>Liyakat Ahmad Khan</h4>
+            <span> Data Scientist, Interface Learning School</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <p class="t-quote">“Clean code, great communication, and flawless responsive design. Highly recommended!”</p>
+        <div class="t-user">
+          <img src="Irfan-Usuf.jpg" alt="">
+          <div>
+            <h4>Irfan Usuf</h4>
+            <span>Software Engineer, Interface Learning School</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Right Button -->
+    <button id="nextBtn" class="side-btn right-btn">❯</button>
+
+    <!-- Dots -->
+    <div class="dots"></div>
+
+  </section>
+
+
+  <!-- SCRIPT -->
+
+  <script>
+    const cards = document.querySelectorAll(".t-card");
+    const dotsContainer = document.querySelector(".dots");
+    const prevBtn = document.getElementById("prevBtn");
+    const nextBtn = document.getElementById("nextBtn");
+
+    let index = 0;
+
+    /* Create dots */
+    cards.forEach((_, i) => {
+      const dot = document.createElement("button");
+      if (i === 0) dot.classList.add("active");
+      dot.addEventListener("click", () => showTestimonial(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll(".dots button");
+
+    function showTestimonial(i) {
+      cards.forEach(card => card.classList.remove("active"));
+      dots.forEach(dot => dot.classList.remove("active"));
+
+      cards[i].classList.add("active");
+      dots[i].classList.add("active");
+
+      index = i;
+    }
+
+    prevBtn.addEventListener("click", () => {
+      index = (index - 1 + cards.length) % cards.length;
+      showTestimonial(index);
+    });
+
+    nextBtn.addEventListener("click", () => {
+      index = (index + 1) % cards.length;
+      showTestimonial(index);
+    });
+
+    /* Auto slide */
+    setInterval(() => {
+      index = (index + 1) % cards.length;
+      showTestimonial(index);
+    }, 6000);
+
+  </script>
+
+  <!-- END OF TESTIMONIALS -->
+
+
+
+
+
+  <!-- REACH ME OUT SECTION -->
+
+  <section id="ReachMeOut" data-animate>
+    <div class="container" data-animate>
+      <h2 data-animate>Contact</h2>
+      <p class="sub" data-animate>
+        Don’t hesitate to connect for project help, or technical inquiries. </p>
+      <form id="contact-form" aria-label="Contact form" data-animate>
+        <label for="name">Your name</label>
+        <input id="name" type="text" name="name" placeholder="Your name" required />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" name="email" placeholder="Email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Share your query...!" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      const phoneNumber = "919149865535";
+
+      const text = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nMessage: ${message}`
+      );
+
+      const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+      window.location.href = url;
+    });
+  </script>
+
+  <!-- END OF REACH ME OUT SECTION -->
+
+
+
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" data-animate>
+
+    <div class="bfoot">
+      <div class="contact" data-animate>
+        <!-- <h2 data-animate>Contact</h2> -->
+        <p>Email: <a href="mailto:bareerabilal03@gmail.com">bareerabilal03@gmail.com</a></p>
+        <p>Location: Srinagar, JK</p>
+      </div>
+
+      <div class="social-links" data-animate>
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/bareera-bilal03" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Bareera-Bilal" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+
+        <!-- WhatsApp -->
+        <a href="https://wa.me/919149865535" target="_blank" class="social-icon">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </div>
+
+      <br>
+
+      <div class="tp" data-animate>
+<!-- 
+        <a href="terms.html">•Terms and conditions</a>
+        <a href="privacy.html"> • Privacy</a> -->
+
+
+
+      </div>
+    </div>
+
+    
+  </section>
+
+  <!-- END OF CONTACT SECTION -->
+
+
+
+
+
+  <!-- FOOTER SECTION -->
+
+  <footer data-animate>
+    <p>© 2025 Bareera Bilal • All rights reserved </p>
+  </footer>
+
+
+  <script>
+    const animatedEls = document.querySelectorAll('[data-animate]');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.15 // reveal when 15% of element is visible
+    });
+
+    animatedEls.forEach(el => observer.observe(el));
+  </script>
+
+  <!-- END OF FOOTER SECTION -->
+
+
+
+
+</body>
+
+</html>
