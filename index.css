@@ -1662,12 +1662,23 @@ nav ul li a:hover {
   object-fit: cover;
   border: 3px solid #6366f1;
 } */
+ /* .t-user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;        
+  object-fit: contain;      
+  background:whitesmoke;       
+  padding: 6px;             
+  border: 2px solid #6366f1;
+  display: block;
+}
+ */
  .t-user img {
   width: 80px;
   height: 80px;
   border-radius: 50%;        /* keeps circle shape */
-  object-fit: contain;       /* fits entire image inside circle */
-  background:whitesmoke;       /* optional neutral bg if image has transparency */
+  object-fit: cover;         /* fills circle, crops excess */
+  background: whitesmoke;    /* optional neutral bg if image has transparency */
   padding: 6px;              /* space inside the circle */
   border: 2px solid #6366f1; /* elegant border */
   display: block;
